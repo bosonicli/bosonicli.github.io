@@ -1,7 +1,8 @@
 ---
-title: 2022-07-10-使用Hexo部署GitHub Pages.md
+title: 2022-07-10 - 使用 Hexo 部署GitHub Pages.md
 date: 2022-07-10 18:55:40
 tags:
+- Hexo
 ---
 本小白第一天尝鲜 Hexo + GitHub Pages ，折腾半天发现我没搞清楚一个根本性的问题：
 
