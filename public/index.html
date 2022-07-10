@@ -64,6 +64,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2022-07-10-使用Hexo部署GitHub-Pages-md" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/07/10/2022-07-10-%E4%BD%BF%E7%94%A8Hexo%E9%83%A8%E7%BD%B2GitHub-Pages-md/" class="article-date">
+  <time datetime="2022-07-10T10:55:40.000Z" itemprop="datePublished">2022-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/07/10/2022-07-10-%E4%BD%BF%E7%94%A8Hexo%E9%83%A8%E7%BD%B2GitHub-Pages-md/">2022-07-10-使用Hexo部署GitHub Pages.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本小白第一天尝鲜 Hexo + GitHub Pages ，折腾半天发现我没搞清楚一个根本性的问题：</p>
+<p>那就是 Hexo 部署的网页和 GitHub 仓库托管的源码不是一个东西。</p>
+<p>所以跟我一样的小白在折腾之前应该至少给 GitHub 仓库预留两个分支：</p>
+<ul>
+<li><p>master</p>
+<p>  用于存储博客源码</p>
+<p>  GitHub 因为政治正确的原因会将默认分支名字设置成 main ，可能影响与 VSCode 等工具的配合，建议保持默认分支名字为 master</p>
+</li>
+<li><p>gh-pages</p>
+<p>  用来部署编译后的静态页面(可以是其他任何名字)</p>
+<p>  GitHub Pages 现在可以设置用来部署静态网页的分支。在仓库的 Settings 界面选择 Pages ，将部署的分支设置成这个。</p>
+<p>  在 Hexo 的配置文件 <code>_config.yml</code> 中，将 Hexo 部署的分支设置成这个：</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/&lt;username&gt;/&lt;repository&gt;</span><br><span class="line">    # example, https://github.com/bosonicli/bosonicli.github.io</span><br><span class="line">    branch: gh-pages</span><br></pre></td></tr></table></figure>
+
+<p>  这样，经 Hexo 编译后的静态页面 HTML 文件就部署到了 gh-pages 分支，然后经由 GitHub Pages 工具就可以自动部署到域名上了</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/07/10/2022-07-10-%E4%BD%BF%E7%94%A8Hexo%E9%83%A8%E7%BD%B2GitHub-Pages-md/" data-id="cl5f80cdh0000l9qvaqee0y7s" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-2022-07-09-New-to-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/07/09/2022-07-09-New-to-Hexo/" class="article-date">
@@ -195,6 +248,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/07/10/2022-07-10-%E4%BD%BF%E7%94%A8Hexo%E9%83%A8%E7%BD%B2GitHub-Pages-md/">2022-07-10-使用Hexo部署GitHub Pages.md</a>
+          </li>
         
           <li>
             <a href="/2022/07/09/2022-07-09-New-to-Hexo/">2022-07-09-New to Hexo</a>
