@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>bosonicli 的水晶球</title>
+  
+  
+  <link href="http://bosonicli.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://bosonicli.github.io/"/>
+  <updated>2022-07-11T09:33:07.371Z</updated>
+  <id>http://bosonicli.github.io/</id>
+  
+  <author>
+    <name>bosonicli</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022-07-10 - 使用 Hexo 部署GitHub Pages.md</title>
+    <link href="http://bosonicli.github.io/2022/07/10/2022-07-10-shi-yong-hexo-zai-github-pages-shang-bu-shu-bo-ke/"/>
+    <id>http://bosonicli.github.io/2022/07/10/2022-07-10-shi-yong-hexo-zai-github-pages-shang-bu-shu-bo-ke/</id>
+    <published>2022-07-10T10:55:40.000Z</published>
+    <updated>2022-07-11T09:33:07.371Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本小白第一天尝鲜用 Hexo + GitHub Pages 部署个人博客 ，浪费了一天踩各种坑，记录一下经验教训。&lt;/p&gt;
+&lt;p&gt;首先，我想要做什么？为什么用 Hexo + GitHub Pages</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Blog" scheme="http://bosonicli.github.io/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022-07-09 - New to Hexo</title>
+    <link href="http://bosonicli.github.io/2022/07/09/2022-07-09-new-to-hexo/"/>
+    <id>http://bosonicli.github.io/2022/07/09/2022-07-09-new-to-hexo/</id>
+    <published>2022-07-09T02:54:19.000Z</published>
+    <updated>2022-07-11T08:53:14.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;My first adventure to</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Blog" scheme="http://bosonicli.github.io/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://bosonicli.github.io/2022/07/09/hello-world/"/>
+    <id>http://bosonicli.github.io/2022/07/09/hello-world/</id>
+    <published>2022-07-09T02:30:00.000Z</published>
+    <updated>2022-07-09T02:55:10.462Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
