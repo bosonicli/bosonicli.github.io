@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>bosonicli 的水晶球</title>
   
-  
+  <subtitle>In the long run we&#39;re all dead.</subtitle>
   <link href="http://bosonicli.github.io/atom.xml" rel="self"/>
   
   <link href="http://bosonicli.github.io/"/>
-  <updated>2022-07-11T09:33:07.371Z</updated>
+  <updated>2022-07-13T08:50:20.180Z</updated>
   <id>http://bosonicli.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022-07-13-各娱乐巨头市值规模</title>
+    <link href="http://bosonicli.github.io/2022/07/13/2022-07-13-ge-yu-le-ju-tou-shi-zhi-gui-mo/"/>
+    <id>http://bosonicli.github.io/2022/07/13/2022-07-13-ge-yu-le-ju-tou-shi-zhi-gui-mo/</id>
+    <published>2022-07-13T07:05:56.000Z</published>
+    <updated>2022-07-13T08:50:20.180Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;作为一个游戏党、美剧党，有时会经常奇怪那些好莱坞娱乐业巨头之间的关系。今天大致梳理了一下，主要关注各公司的规模。&lt;/p&gt;
+&lt;p&gt;比如人称的好莱坞五大巨头的六七个公司(五大巨头有六个是常识)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;华特迪士尼&lt;/p&gt;
+&lt;p&gt;市值1700亿刀&lt;/p&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Finance" scheme="http://bosonicli.github.io/tags/Finance/"/>
+    
+  </entry>
   
   <entry>
     <title>2022-07-10 - 使用 Hexo 部署GitHub Pages.md</title>
