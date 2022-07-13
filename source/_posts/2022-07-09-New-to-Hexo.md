@@ -5,3 +5,13 @@ tags:
 - Blog
 ---
 My first adventure to Hexo
+
+## Related blog
+
+{% post_link hello-world hello-world %}
+
+## Reference
+
+[Hexo][Hexo]
+
+[Hexo]:https://hexo.io/zh-cn/
