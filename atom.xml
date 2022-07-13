@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>bosonicli 的水晶球</title>
   
-  
+  <subtitle>In the long run we&#39;re all dead.</subtitle>
   <link href="http://bosonicli.github.io/atom.xml" rel="self"/>
   
   <link href="http://bosonicli.github.io/"/>
-  <updated>2022-07-13T08:13:49.178Z</updated>
+  <updated>2022-07-13T08:50:20.180Z</updated>
   <id>http://bosonicli.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://bosonicli.github.io/2022/07/13/2022-07-13-ge-yu-le-ju-tou-shi-zhi-gui-mo/"/>
     <id>http://bosonicli.github.io/2022/07/13/2022-07-13-ge-yu-le-ju-tou-shi-zhi-gui-mo/</id>
     <published>2022-07-13T07:05:56.000Z</published>
-    <updated>2022-07-13T08:13:49.178Z</updated>
+    <updated>2022-07-13T08:50:20.180Z</updated>
     
     
       
