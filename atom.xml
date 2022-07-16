@@ -6,7 +6,7 @@
   <link href="http://bosonicli.github.io/atom.xml" rel="self"/>
   
   <link href="http://bosonicli.github.io/"/>
-  <updated>2022-07-13T13:47:13.628Z</updated>
+  <updated>2022-07-16T11:14:15.780Z</updated>
   <id>http://bosonicli.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022-07-16-拉格朗日点</title>
+    <link href="http://bosonicli.github.io/2022/07/16/2022-07-16-la-ge-lang-ri-dian/"/>
+    <id>http://bosonicli.github.io/2022/07/16/2022-07-16-la-ge-lang-ri-dian/</id>
+    <published>2022-07-16T11:08:05.000Z</published>
+    <updated>2022-07-16T11:14:15.780Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Tidal-force&quot;&gt;&lt;a href=&quot;#Tidal-force&quot; class=&quot;headerlink&quot; title=&quot;Tidal force&quot;&gt;&lt;/a&gt;Tidal force&lt;/h2&gt;&lt;p&gt;$$&lt;br&gt;\begin{aligned}&lt;br&gt;   </summary>
+        
+      
+    
+    
+    
+    
+    <category term="Physics" scheme="http://bosonicli.github.io/tags/Physics/"/>
+    
+  </entry>
   
   <entry>
     <title>欢迎来到Bosonicli的个人博客</title>
