@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"></meta><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>2022-07-16-拉格朗日点 | Your awesome title</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="2022-07-16-拉格朗日点" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tidal force" />
+<meta property="og:description" content="Tidal force" />
+<link rel="canonical" href="http://localhost:4000/source/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html" />
+<meta property="og:url" content="http://localhost:4000/source/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-07-17T03:08:05+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="2022-07-16-拉格朗日点" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-07-17T03:08:05+08:00","datePublished":"2022-07-17T03:08:05+08:00","description":"Tidal force","headline":"2022-07-16-拉格朗日点","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/source/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html"},"url":"http://localhost:4000/source/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/source/assets/css/main.css">
+  <script src="/source/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/source/feed.xml" title="Your awesome title" /><link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/source/">
+  <img class="site-favicon" title="Your awesome title" src="" onerror="this.style.display='none'">
+  Your awesome title
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+
+
+
+
+</div>
+        </nav></div>
+  </div>
+</header>
+
+<script>
+  (function() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+  <h1 class="post-title">2022-07-16-拉格朗日点</h1>
+  <div class="post-meta">
+    <time datetime="2022-07-17T03:08:05+08:00" itemprop="datePublished">
+      17 Jul 2022
+    </time>
+    
+      <span> • </span>
+      <span class="post-tags-section">
+        <i class="post-tags-icon fas fa-tag"></i>
+        <ul class="post-tags"><li>
+              <span class="post-tag">physics</span></li></ul>
+      </span>
+    
+  </div>
+
+  <h2 id="tidal-force">Tidal force</h2>
+
+\[\begin{aligned}
+    (1+x)^{-\frac{3}{2}} &amp;= 1 + (-\frac{3}{2} ) x + (\frac{15}{8}) x^{2} + o(x^{3})
+\end{aligned}\]
+
+\[\begin{aligned}
+	V_{c} &amp;= - \frac{k}{\vert \vec{r_0} \vert} \\
+	V_{g} &amp;= - \frac{k}{\vert \vec{r} \vert} \\
+	&amp;= - \frac{k}{\vert \vec{r_0} \vert} (\frac{\vec{r}^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
+	&amp;= - \frac{k}{r_0} (1 + \frac{(\vec{r_0}+\vec{\Delta r})^2-\vec{r_0}^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
+	&amp;= - \frac{k}{r_0} (1 + \frac{2 \vec{r_0} \cdot \vec{\Delta r} + (\vec{\Delta r})^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
+	&amp;= - \frac{k}{r_0} (1 - \frac{ \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2} + \frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 \vec{r_0}^4} - \frac{ (\vec{\Delta r})^2}{2 (\vec{r_0})^2}) + o((\vec{\Delta r})^3)	\\
+	&amp;= V_{g}^{0} + V_{g}^{1} + V_{g}^{2} + o((\vec{\Delta r})^3) \\
+	V_{g}^{0} &amp;= V_{c} \\
+	V_{g}^{1} &amp;= - \frac{k}{r_0} (- \frac{ \vec{r_0} \cdot \vec{\Delta r}}{r_0^2}) \\
+	V_{g}^{2} &amp;= - \frac{k}{r_0} (\frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2})
+\end{aligned}
+\tag{taylorV}\]
+
+<p>Coriolis force</p>
+
+<p>In system with rotation $(\vec{\omega}, \vec{\beta})$ around point $O$, non-inertial Coriolis forces are</p>
+
+\[\begin{aligned}
+	\vec{a}_{\omega} &amp;= -\vec{\omega} \times ( \vec{\omega} \times \vec{r} ) \\
+	\vec{a}_{c} &amp;= -2 (\vec{\omega} \times \vec{\delta v})	\\
+	\vec{a}_{\beta} &amp;= - \vec{\beta} \times \vec{\delta r}
+\end{aligned}
+\tag{aRot}\]
+
+<p>Effective centrifugal potential $V_{\omega}$ corresponding to $\vec{a}_{\omega}$ is</p>
+
+\[\begin{aligned}
+	V_{\omega} &amp;= -\frac{1}{2} \omega_0^2 (\vec{r} + \vec{\Delta r})^2
+\end{aligned}\]
+
+<h2 id="lagrangian-points">Lagrangian Points</h2>
+
+<p>We consider the effective dynamics in a Non-inertial system of two-body gravity system.</p>
+
+<p>Consider a two-body system consists of two celestial bodies $M_1$ and $M_2$ with distance of $r_0$. The two-body effective mass and orbiting angular velocity are</p>
+
+\[\begin{aligned}
+	\omega_0^2 &amp;= \frac{k}{r_0^3}	\\
+	&amp;= \frac{G (M_1 + M_2)}{r_0^3}
+\end{aligned}
+\tag{motionBin}\]
+
+<p>The two celestial bodies are orbiting around the centroid $O$. Now we consider the Lagrangian point $L_4$ locating at the vertex of an equilateral triangle connecting $M_1$ and $M_2$ ($\vert r_1 \vert = \vert r_2 \vert = r_0$), and we have</p>
+
+\[\begin{aligned}
+\vec{r} &amp;= \frac{M_1 \vec{r_1} + M_2 \vec{r_2}}{M_1 + M_2} \\
+\vec{r_1} &amp;= \vec{r} + \frac{M_2}{M_1 + M_2} \vec{r_{12}} \\
+\vec{r_2} &amp;= \vec{r} - \frac{M_1}{M_1 + M_2} \vec{r_{12}}
+\end{aligned}\]
+
+<p>In the rotating celestial system, the effective potential around $L_4$ is</p>
+
+\[\begin{aligned}
+	V_{eff} &amp;= V_{1}(\vec{r_1}) + V_{2}(\vec{r_2}) + V_{\omega}(\vec{r}) \\
+	&amp;= [V_{1}^{0} + V_{1}^{1} + V_{1}^{2}] + [V_{2}^{0} + V_{2}^{1} + V_{2}^{2}] \\
+	&amp;+ [V_{\omega}^{0} + V_{\omega}^{1} + V_{\omega}^{2}] + o((\vec{\Delta r})^3)	\\
+	&amp;= V_{eff}^{0} + V_{eff}^{1} + V_{eff}^{2} + o((\vec{\Delta r})^3)	\\
+	V_{eff}^{0} &amp;= - \frac{G M_1}{r_0} - \frac{G M_2}{r_0} - \frac{1}{2} \omega_{0}^2 \vec{r}^2 \\
+	&amp;= - \frac{G (M_1 + M_2)}{r_0^3} (r_0^2 + \vec{r}^2) \\
+	V_{eff}^{1} &amp;= V_{1}^{1} + V_{2}^{1} + V_{\omega}^{1} \\
+	&amp;= - \frac{G M_1}{r_0} (-\frac{\vec{r_1} \cdot \vec{\Delta r}}{r_0^2}) - \frac{G M_2}{r_0} (-\frac{\vec{r_2} \cdot \vec{\Delta r}}{r_0^2}) - \omega_0^2 (\vec{r} \cdot \vec{\Delta r})	\\
+	&amp;= \frac{G}{r_0^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r} - \frac{G}{r_0^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r}	\\
+	&amp;= 0	\\
+	V_{eff}^{2} &amp;= - \frac{G M_1}{r_0} (\frac{3 (\vec{r_1} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2}) \\
+	&amp;- \frac{G M_2}{r_0} (\frac{3 (\vec{r_2} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2}) - \frac{1}{2} \omega_{0}^{2} \vec{\Delta r}^2 \\
+	&amp;= - \frac{3G}{2 r_{0}^{5}} [(M_1 + M_2) (\vec{r} \cdot \vec{\Delta r}) + \frac{M_1 M_2}{M_1 + M_2} (\vec{r_{12}} \cdot \vec{\Delta r}) ] \\
+	V_{eff} &amp;= V_{eff}^{0} + 0 + V_{eff}^{2} + o((\vec{\Delta r})^3)
+\end{aligned}
+\tag{taylorBin}\]
+
+<p>$L_4$ is thus a local smooth maximum with bilinear $V_{eff}^{2}$ convex in the rorating reference system.</p>
+
+<p>If a tiny celestial body shifts slightly away from $L_4$ and accerlerates for a while, its respective velocity $\Delta v$ satisfy</p>
+
+\[\begin{aligned}
+	(\Delta v)^2 &amp;\sim - V_{eff}(\Delta r) \sim \frac{GM}{r_0^3} (\Delta r)^2
+\end{aligned}\]
+
+<p>and the Coriolis force will bound it with an orbit with radius $r_{\Delta}$</p>
+
+\[\begin{aligned}
+	\frac{(\Delta v)^2}{r_{\Delta}} &amp;\sim (\Delta v) \omega \sim \sqrt{\frac{GM}{r_0^3}} (\Delta v)
+\end{aligned}\]
+
+<p>we got</p>
+
+\[\begin{aligned}
+	r_{\Delta} &amp;\sim \Delta r
+\end{aligned}\]
+
+<p>Thus the stability around $L_4$ is irrelevant to shift scale $\Delta r$</p>
+
+<p>More accurate differential equation calculation implies that celestial bodies around $L_4$ are bounded by Coriolis force under certain condition (the mass ratio boundary $\frac{M_1}{M_2} &gt; R_{crit}$ )</p>
+
+
+  
+</article>
+
+
+  <aside class="related">
+    <h2 class="related-title">Related posts</h2>
+    <ul class="related-posts">
+      
+        <li>
+          <a href="/source/jekyll/update/2022/07/24/welcome-to-jekyll.html">
+            Welcome to Jekyll!
+          </a>
+          <small><time datetime="2022-07-24T15:06:37+08:00">24 Jul 2022</time></small>
+        </li>
+      
+        <li>
+          <a href="/source/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1.html">
+            2022-07-13-各娱乐巨头市值规模
+          </a>
+          <small><time datetime="2022-07-13T23:05:56+08:00">13 Jul 2022</time></small>
+        </li>
+      
+        <li>
+          <a href="/source/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html">
+            2022-07-10 - 使用 Hexo 部署GitHub Pages.md
+          </a>
+          <small><time datetime="2022-07-11T02:55:40+08:00">11 Jul 2022</time></small>
+        </li>
+      
+    </ul>
+  </aside>
+
+
+</head>
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script> 
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        processEscapes: true
+      }
+    };
+    </script>
+
+</head>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/source/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+      <div> </div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/source/feed.xml">via RSS</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/source/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/source/" rel="alternate" type="text/html" /><updated>2022-07-24T16:43:26+08:00</updated><id>http://localhost:4000/source/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/source/jekyll/update/2022/07/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-07-24T15:06:37+08:00</published><updated>2022-07-24T15:06:37+08:00</updated><id>http://localhost:4000/source/jekyll/update/2022/07/24/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/source/jekyll/update/2022/07/24/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">2022-07-16-拉格朗日点</title><link href="http://localhost:4000/source/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html" rel="alternate" type="text/html" title="2022-07-16-拉格朗日点" /><published>2022-07-17T03:08:05+08:00</published><updated>2022-07-17T03:08:05+08:00</updated><id>http://localhost:4000/source/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9</id><content type="html" xml:base="http://localhost:4000/source/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html">&lt;h2 id=&quot;tidal-force&quot;&gt;Tidal force&lt;/h2&gt;
+
+\[\begin{aligned}
+    (1+x)^{-\frac{3}{2}} &amp;amp;= 1 + (-\frac{3}{2} ) x + (\frac{15}{8}) x^{2} + o(x^{3})
+\end{aligned}\]
+
+\[\begin{aligned}
+	V_{c} &amp;amp;= - \frac{k}{\vert \vec{r_0} \vert} \\
+	V_{g} &amp;amp;= - \frac{k}{\vert \vec{r} \vert} \\
+	&amp;amp;= - \frac{k}{\vert \vec{r_0} \vert} (\frac{\vec{r}^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
+	&amp;amp;= - \frac{k}{r_0} (1 + \frac{(\vec{r_0}+\vec{\Delta r})^2-\vec{r_0}^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
+	&amp;amp;= - \frac{k}{r_0} (1 + \frac{2 \vec{r_0} \cdot \vec{\Delta r} + (\vec{\Delta r})^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
+	&amp;amp;= - \frac{k}{r_0} (1 - \frac{ \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2} + \frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 \vec{r_0}^4} - \frac{ (\vec{\Delta r})^2}{2 (\vec{r_0})^2}) + o((\vec{\Delta r})^3)	\\
+	&amp;amp;= V_{g}^{0} + V_{g}^{1} + V_{g}^{2} + o((\vec{\Delta r})^3) \\
+	V_{g}^{0} &amp;amp;= V_{c} \\
+	V_{g}^{1} &amp;amp;= - \frac{k}{r_0} (- \frac{ \vec{r_0} \cdot \vec{\Delta r}}{r_0^2}) \\
+	V_{g}^{2} &amp;amp;= - \frac{k}{r_0} (\frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2})
+\end{aligned}
+\tag{taylorV}\]
+
+&lt;p&gt;Coriolis force&lt;/p&gt;
+
+&lt;p&gt;In system with rotation $(\vec{\omega}, \vec{\beta})$ around point $O$, non-inertial Coriolis forces are&lt;/p&gt;
+
+\[\begin{aligned}
+	\vec{a}_{\omega} &amp;amp;= -\vec{\omega} \times ( \vec{\omega} \times \vec{r} ) \\
+	\vec{a}_{c} &amp;amp;= -2 (\vec{\omega} \times \vec{\delta v})	\\
+	\vec{a}_{\beta} &amp;amp;= - \vec{\beta} \times \vec{\delta r}
+\end{aligned}
+\tag{aRot}\]
+
+&lt;p&gt;Effective centrifugal potential $V_{\omega}$ corresponding to $\vec{a}_{\omega}$ is&lt;/p&gt;
+
+\[\begin{aligned}
+	V_{\omega} &amp;amp;= -\frac{1}{2} \omega_0^2 (\vec{r} + \vec{\Delta r})^2
+\end{aligned}\]
+
+&lt;h2 id=&quot;lagrangian-points&quot;&gt;Lagrangian Points&lt;/h2&gt;
+
+&lt;p&gt;We consider the effective dynamics in a Non-inertial system of two-body gravity system.&lt;/p&gt;
+
+&lt;p&gt;Consider a two-body system consists of two celestial bodies $M_1$ and $M_2$ with distance of $r_0$. The two-body effective mass and orbiting angular velocity are&lt;/p&gt;
+
+\[\begin{aligned}
+	\omega_0^2 &amp;amp;= \frac{k}{r_0^3}	\\
+	&amp;amp;= \frac{G (M_1 + M_2)}{r_0^3}
+\end{aligned}
+\tag{motionBin}\]
+
+&lt;p&gt;The two celestial bodies are orbiting around the centroid $O$. Now we consider the Lagrangian point $L_4$ locating at the vertex of an equilateral triangle connecting $M_1$ and $M_2$ ($\vert r_1 \vert = \vert r_2 \vert = r_0$), and we have&lt;/p&gt;
+
+\[\begin{aligned}
+\vec{r} &amp;amp;= \frac{M_1 \vec{r_1} + M_2 \vec{r_2}}{M_1 + M_2} \\
+\vec{r_1} &amp;amp;= \vec{r} + \frac{M_2}{M_1 + M_2} \vec{r_{12}} \\
+\vec{r_2} &amp;amp;= \vec{r} - \frac{M_1}{M_1 + M_2} \vec{r_{12}}
+\end{aligned}\]
+
+&lt;p&gt;In the rotating celestial system, the effective potential around $L_4$ is&lt;/p&gt;
+
+\[\begin{aligned}
+	V_{eff} &amp;amp;= V_{1}(\vec{r_1}) + V_{2}(\vec{r_2}) + V_{\omega}(\vec{r}) \\
+	&amp;amp;= [V_{1}^{0} + V_{1}^{1} + V_{1}^{2}] + [V_{2}^{0} + V_{2}^{1} + V_{2}^{2}] \\
+	&amp;amp;+ [V_{\omega}^{0} + V_{\omega}^{1} + V_{\omega}^{2}] + o((\vec{\Delta r})^3)	\\
+	&amp;amp;= V_{eff}^{0} + V_{eff}^{1} + V_{eff}^{2} + o((\vec{\Delta r})^3)	\\
+	V_{eff}^{0} &amp;amp;= - \frac{G M_1}{r_0} - \frac{G M_2}{r_0} - \frac{1}{2} \omega_{0}^2 \vec{r}^2 \\
+	&amp;amp;= - \frac{G (M_1 + M_2)}{r_0^3} (r_0^2 + \vec{r}^2) \\
+	V_{eff}^{1} &amp;amp;= V_{1}^{1} + V_{2}^{1} + V_{\omega}^{1} \\
+	&amp;amp;= - \frac{G M_1}{r_0} (-\frac{\vec{r_1} \cdot \vec{\Delta r}}{r_0^2}) - \frac{G M_2}{r_0} (-\frac{\vec{r_2} \cdot \vec{\Delta r}}{r_0^2}) - \omega_0^2 (\vec{r} \cdot \vec{\Delta r})	\\
+	&amp;amp;= \frac{G}{r_0^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r} - \frac{G}{r_0^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r}	\\
+	&amp;amp;= 0	\\
+	V_{eff}^{2} &amp;amp;= - \frac{G M_1}{r_0} (\frac{3 (\vec{r_1} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2}) \\
+	&amp;amp;- \frac{G M_2}{r_0} (\frac{3 (\vec{r_2} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2}) - \frac{1}{2} \omega_{0}^{2} \vec{\Delta r}^2 \\
+	&amp;amp;= - \frac{3G}{2 r_{0}^{5}} [(M_1 + M_2) (\vec{r} \cdot \vec{\Delta r}) + \frac{M_1 M_2}{M_1 + M_2} (\vec{r_{12}} \cdot \vec{\Delta r}) ] \\
+	V_{eff} &amp;amp;= V_{eff}^{0} + 0 + V_{eff}^{2} + o((\vec{\Delta r})^3)
+\end{aligned}
+\tag{taylorBin}\]
+
+&lt;p&gt;$L_4$ is thus a local smooth maximum with bilinear $V_{eff}^{2}$ convex in the rorating reference system.&lt;/p&gt;
+
+&lt;p&gt;If a tiny celestial body shifts slightly away from $L_4$ and accerlerates for a while, its respective velocity $\Delta v$ satisfy&lt;/p&gt;
+
+\[\begin{aligned}
+	(\Delta v)^2 &amp;amp;\sim - V_{eff}(\Delta r) \sim \frac{GM}{r_0^3} (\Delta r)^2
+\end{aligned}\]
+
+&lt;p&gt;and the Coriolis force will bound it with an orbit with radius $r_{\Delta}$&lt;/p&gt;
+
+\[\begin{aligned}
+	\frac{(\Delta v)^2}{r_{\Delta}} &amp;amp;\sim (\Delta v) \omega \sim \sqrt{\frac{GM}{r_0^3}} (\Delta v)
+\end{aligned}\]
+
+&lt;p&gt;we got&lt;/p&gt;
+
+\[\begin{aligned}
+	r_{\Delta} &amp;amp;\sim \Delta r
+\end{aligned}\]
+
+&lt;p&gt;Thus the stability around $L_4$ is irrelevant to shift scale $\Delta r$&lt;/p&gt;
+
+&lt;p&gt;More accurate differential equation calculation implies that celestial bodies around $L_4$ are bounded by Coriolis force under certain condition (the mass ratio boundary $\frac{M_1}{M_2} &amp;gt; R_{crit}$ )&lt;/p&gt;</content><author><name></name></author><category term="Physics" /><summary type="html">Tidal force</summary></entry><entry><title type="html">2022-07-13-各娱乐巨头市值规模</title><link href="http://localhost:4000/source/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1.html" rel="alternate" type="text/html" title="2022-07-13-各娱乐巨头市值规模" /><published>2022-07-13T23:05:56+08:00</published><updated>2022-07-13T23:05:56+08:00</updated><id>http://localhost:4000/source/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1</id><content type="html" xml:base="http://localhost:4000/source/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1.html">&lt;p&gt;作为一个游戏党、美剧党，有时会经常奇怪那些好莱坞娱乐业巨头之间的关系。今天大致梳理了一下，主要关注各公司的规模。&lt;/p&gt;
+
+&lt;p&gt;比如人称的好莱坞五大巨头的六七个公司(五大巨头有六个是常识)：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;华特迪士尼&lt;/p&gt;
+
+    &lt;p&gt;市值1700亿刀&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;NBC环球&lt;/p&gt;
+
+    &lt;p&gt;母公司康卡斯特，市值1800亿刀&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;华纳&lt;/p&gt;
+
+    &lt;p&gt;母公司 AT&amp;amp;T，美国通信三巨头之一，市值1500亿刀&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;哥伦比亚营业&lt;/p&gt;
+
+    &lt;p&gt;母公司索尼，日本巨头，市值14万亿日元，约合1000亿刀&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;派拉蒙&lt;/p&gt;
+
+    &lt;p&gt;市值160亿刀，母公司全美娱乐，未上市&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;虽然都在好莱坞竞争影视，不过迪士尼集团显然不止于此，其规模已经跟其他几个巨头的母公司，也就是一些在更广阔领域盘根错节的国际巨头相当，都是1500亿刀量级&lt;/p&gt;
+
+&lt;p&gt;同时这些传统媒体近些年受到新媒体(如短视频)的冲击也是很大的，很多传统媒体要生存，相当于要与新媒体形式对抗，那么新媒体有多大规模呢？&lt;/p&gt;
+
+&lt;p&gt;还是以市值来估计，腾讯阿里字节都在3000亿刀上下，Facebook母公司 Meta 4500亿刀。&lt;/p&gt;
+
+&lt;p&gt;而一些更大相关领域的巨头，中国移动，亚马逊，Google 母公司 Alphabet，都在1-1.5万亿刀之间，微软和苹果更大些，市值逼近甚至超过2万亿。&lt;/p&gt;
+
+&lt;p&gt;能源行业的话，中石化折合700亿，中石油1300亿，美国最大能源巨头埃克森美孚3500亿，都够不上万亿的门。&lt;/p&gt;
+
+&lt;p&gt;至于汽车行业，除了人类之光特斯拉7000亿市值傲视群雄之外，美国传统三大汽车巨头，比如通用和福特，都只有500亿上下。&lt;/p&gt;
+
+&lt;p&gt;金融业方面，华尔街几大巨头1000亿上下，工行折合2500亿，唯一的异类是 VISA 4000亿，信用卡原来这么赚钱的吗？&lt;/p&gt;
+
+&lt;p&gt;可能汽车、能源、金融这种行业不像互联网那么集中，所以没有超过万亿的公司。&lt;/p&gt;</content><author><name></name></author><category term="Finance" /><summary type="html">作为一个游戏党、美剧党，有时会经常奇怪那些好莱坞娱乐业巨头之间的关系。今天大致梳理了一下，主要关注各公司的规模。</summary></entry><entry><title type="html">2022-07-10 - 使用 Hexo 部署GitHub Pages.md</title><link href="http://localhost:4000/source/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="2022-07-10 - 使用 Hexo 部署GitHub Pages.md" /><published>2022-07-11T02:55:40+08:00</published><updated>2022-07-11T02:55:40+08:00</updated><id>http://localhost:4000/source/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/source/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;本小白第一天尝鲜用 Hexo + GitHub Pages 部署个人博客 ，浪费了一天踩各种坑，记录一下经验教训。&lt;/p&gt;
+
+&lt;p&gt;首先，我想要做什么？为什么用 Hexo + GitHub Pages ？&lt;/p&gt;
+
+&lt;p&gt;我希望拥有&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;一套便捷好用的 Markdown to HTML 静态网页渲染工具&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一个便捷好用的静态网页托管平台&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一个好用的源码托管平台&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这样我可以用 Markdown 在本地记一些日常笔记，实时同步到源码托管平台，随时把笔记渲染成静态网页，随时推送到网页托管平台展示给外界看。如此，我的本地笔记本就变成一个开放博客，既方便多端编辑，方便随时展示，也方便迁移。&lt;/p&gt;
+
+&lt;p&gt;GitHub Pages 提供了一套网页托管服务，可以把仓库内的 HTML 静态网页自动推送到域名上。这样一个 GitHub 仓库就可以同时扮演 2/3 两个角色。Hexo 是一个好用的渲染工具，因此我选择了这两个的组合。&lt;/p&gt;
+
+&lt;p&gt;这个方案就是我踩坑一整天的原因：源码托管和网页托管是 &lt;strong&gt;两个不同的功能&lt;/strong&gt; ，我想用同一个 GitHub 仓库来实现，不是不行，但搞不好就会导致混乱。相关工具/教程 (如 Hexo) 也并不默认两个功能用同一个仓库实现，使用时也要注意。&lt;/p&gt;
+
+&lt;p&gt;方便的做法是，将这个同时托管源码和静态网页的 GitHub 仓库，至少区分两个分支：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;master(不建议用其他分支名)&lt;/p&gt;
+
+    &lt;p&gt;博客源码分支(如 Markdown)，编辑区&lt;/p&gt;
+
+    &lt;p&gt;建议保持默认分支名字为 master ，以免影响与 VSCode 等工具的配合&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gh-pages(或其他分支名)&lt;/p&gt;
+
+    &lt;p&gt;静态网页分支，非编辑区&lt;/p&gt;
+
+    &lt;p&gt;GitHub Pages 现在可以选择用来部署静态网页的分支。在仓库的 Settings 界面选择 Pages ，将部署的分支设置成这个。&lt;/p&gt;
+
+    &lt;p&gt;在 Hexo 的配置文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 中，将 Hexo 部署的分支也设置成这个：&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deploy:
+    type: git
+    repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;
+    # example, https://github.com/bosonicli/bosonicli.github.io
+    branch: gh-pages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;这样，Hexo 会将源码渲染为 HTML 静态页面，自动部署到仓库的 gh-pages 分支。然后 GitHub Pages 工具自动抓取这个分支的静态页面，就可以自动部署到域名上了。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;之后如需迁移博客，只需迁移源码分支 master ，之后重新部署渲染工具 Hexo 即可。&lt;/p&gt;
+
+&lt;p&gt;这也是我想尝试个人博客的初衷，博客应当是轻便的。把渲染后的HTML一并迁移走略显累赘。&lt;/p&gt;
+
+&lt;p&gt;遇到其他的需求(比如用 GitBook 写操作文档)这套方案就并不适用，不过等我需要用的时候再寻求新方案不迟。&lt;/p&gt;
+
+&lt;h2 id=&quot;参考文献&quot;&gt;参考文献&lt;/h2&gt;
+
+&lt;p&gt;搞清楚上面的问题参考了&lt;a href=&quot;https://segmentfault.com/a/1190000017366905&quot;&gt;这篇博客&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><summary type="html">本小白第一天尝鲜用 Hexo + GitHub Pages 部署个人博客 ，浪费了一天踩各种坑，记录一下经验教训。</summary></entry><entry><title type="html">2022-07-09 - New to Hexo</title><link href="http://localhost:4000/source/2022/07/09/New-to-Hexo.html" rel="alternate" type="text/html" title="2022-07-09 - New to Hexo" /><published>2022-07-09T18:54:19+08:00</published><updated>2022-07-09T18:54:19+08:00</updated><id>http://localhost:4000/source/2022/07/09/New-to-Hexo</id><content type="html" xml:base="http://localhost:4000/source/2022/07/09/New-to-Hexo.html">&lt;p&gt;My first adventure to Hexo&lt;/p&gt;
+
+&lt;h2 id=&quot;related-blog&quot;&gt;Related blog&lt;/h2&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><summary type="html">My first adventure to Hexo</summary></entry></feed>
