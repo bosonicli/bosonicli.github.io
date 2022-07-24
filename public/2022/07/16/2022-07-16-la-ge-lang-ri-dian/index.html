@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="欢迎来到Bosonicli的个人博客, bosonicli 的水晶球">
+    <meta name="keywords" content="2022-07-16-拉格朗日点, bosonicli 的水晶球">
     <meta name="description" content="In the long run we&#39;re all dead.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>欢迎来到Bosonicli的个人博客 | bosonicli 的水晶球</title>
+    <title>2022-07-16-拉格朗日点 | bosonicli 的水晶球</title>
     <link rel="icon" type="image/png" href="/medias/qb_180x180.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">欢迎来到Bosonicli的个人博客</h1>
+                    <h1 class="description center-align post-title">2022-07-16-拉格朗日点</h1>
                 </div>
             </div>
         </div>
@@ -371,8 +371,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Blog/">
-                                <span class="chip bg-color">Blog</span>
+                            <a href="/tags/Physics/">
+                                <span class="chip bg-color">Physics</span>
                             </a>
                         
                     </div>
@@ -387,7 +387,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-07-13
+                    2022-07-16
                 </div>
                 
 
@@ -411,9 +411,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>来到这里，便是缘分。这里是Bosonicli的个人博客。</p>
-<p>不是技术博客。我希望它成为一个随手记录的地方。代码、物理、技术、哲学、胡思乱想，甚至影评动漫，什么都有可能写。</p>
-<p>如果有幸有那么一瞬让你，素昧平生的朋友，感到点进这个博客没有浪费时间，我的记录就有意义。</p>
+                <h2 id="Tidal-force"><a href="#Tidal-force" class="headerlink" title="Tidal force"></a>Tidal force</h2><p>$$<br>\begin{aligned}<br>    (1+x)^{-\frac{3}{2}} &amp;= 1 + (-\frac{3}{2} ) x + (\frac{15}{8}) x^2 + o(x^3)<br>\end{aligned}<br>$$</p>
+<p>$$<br>\begin{aligned}<br>    V_{c} &amp;= - \frac{k}{\vert \vec{r_0} \vert} \<br>    V_{g} &amp;= - \frac{k}{\vert \vec{r} \vert} \<br>    &amp;= - \frac{k}{\vert \vec{r_0} \vert} (\frac{\vec{r}^2}{\vec^2})^{-\frac{1}{2}} \<br>    &amp;= - \frac{k}{r_0} (1 + \frac{(\vec{r_0}+\vec{\Delta r})^2-\vec{r_0}^2}{\vec{r_0}^2})^{-\frac{1}{2}}	\<br>    &amp;= - \frac{k}{r_0} (1 + \frac{2 \vec{r_0} \cdot \vec{\Delta r} + (\vec{\Delta r})^2}{\vec{r_0}^2})^{-\frac{1}{2}}	\<br>    &amp;= - \frac{k}{r_0} (1 - \frac{ \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2} + \frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 \vec{r_0}^4} - \frac{ (\vec{\Delta r})^2}{2 (\vec{r_0})^2}) + o((\vec{\Delta r})^3)	\<br>    &amp;= V_{g}^{0} + V_{g}^{1} + V_{g}^{2} + o((\vec{\Delta r})^3) \<br>    V_{g}^{0} &amp;= V_{c} \<br>    V_{g}^{1} &amp;= - \frac{k}{r_0} (- \frac{ \vec{r_0} \cdot \vec{\Delta r}}{r_0^2}) \<br>    V_{g}^{2} &amp;= - \frac{k}{r_0} (\frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2})<br>\end{aligned}<br>\tag{taylorV}<br>$$</p>
+<p>Coriolis force</p>
+<p>In system with rotation $(\vec{\omega}, \vec{\beta})$ around point $O$, non-inertial Coriolis forces are</p>
+<p>$$<br>\begin{aligned}<br>    \vec{a}<em>{\omega} &amp;= -\vec{\omega} \times ( \vec{\omega} \times \vec{r} ) \<br>    \vec{a}</em>{c} &amp;= -2 (\vec{\omega} \times \vec{\delta v})	\<br>    \vec{a}_{\beta} &amp;= - \vec{\beta} \times \vec{\delta r}<br>\end{aligned}<br>\tag{aRot}<br>$$</p>
+<p>Effective centrifugal potential $V_{\omega}$ corresponding to $\vec{a}_{\omega}$ is</p>
+<p>$$<br>\begin{aligned}<br>    V_{\omega} &amp;= -\frac{1}{2} \omega_0^2 (\vec{r} + \vec{\Delta r})^2<br>\end{aligned}<br>$$</p>
+<h2 id="Lagrangian-Points"><a href="#Lagrangian-Points" class="headerlink" title="Lagrangian Points"></a>Lagrangian Points</h2><p>We consider the effective dynamics in a Non-inertial system of two-body gravity system.</p>
+<p>Consider a two-body system consists of two celestial bodies $M_1$ and $M_2$ with distance of $r_0$. The two-body effective mass and orbiting angular velocity are</p>
+<p>$$<br>\begin{aligned}<br>    \omega_0^2 &amp;= \frac{k}{r_0^3}	\<br>    &amp;= \frac{G (M_1 + M_2)}{r_0^3}<br>\end{aligned}<br>\tag{motionBin}<br>$$</p>
+<p>The two celestial bodies are orbiting around the centroid $O$. Now we consider the Lagrangian point $L_4$ locating at the vertex of an equilateral triangle connecting $M_1$ and $M_2$ ($\vert r_1 \vert = \vert r_2 \vert = r_0$), and we have</p>
+<p>$$<br>\begin{aligned}<br>\vec{r} &amp;= \frac{M_1 \vec{r_1} + M_2 \vec{r_2}}{M_1 + M_2} \<br>\vec{r_1} &amp;= \vec{r} + \frac{M_2}{M_1 + M_2} \vec{r_{12}} \<br>\vec{r_2} &amp;= \vec{r} - \frac{M_1}{M_1 + M_2} \vec{r_{12}}<br>\end{aligned}<br>$$</p>
+<p>In the rotating celestial system, the effective potential around $L_4$ is</p>
+<p>$$<br>\begin{aligned}<br>    V_{eff} &amp;= V_{1}(\vec{r_1}) + V_{2}(\vec{r_2}) + V_{\omega}(\vec{r}) \<br>    &amp;= [V_{1}^{0} + V_{1}^{1} + V_{1}^{2}] + [V_{2}^{0} + V_{2}^{1} + V_{2}^{2}] \<br>    &amp;+ [V_{\omega}^{0} + V_{\omega}^{1} + V_{\omega}^{2}] + o((\vec{\Delta r})^3)	\<br>    &amp;= V_{eff}^{0} + V_{eff}^{1} + V_{eff}^{2} + o((\vec{\Delta r})^3)	\<br>    V_{eff}^{0} &amp;= - \frac{G M_1}{r_0} - \frac{G M_2}{r_0} - \frac{1}{2} \omega_{0}^2 \vec{r}^2 \<br>    &amp;= - \frac{G (M_1 + M_2)}{r_0^3} (r_0^2 + \vec{r}^2) \<br>    V_{eff}^{1} &amp;= V_{1}^{1} + V_{2}^{1} + V_{\omega}^{1} \<br>    &amp;= - \frac{G M_1}{r_0} (-\frac{\vec{r_1} \cdot \vec{\Delta r}}{r_0^2}) - \frac{G M_2}{r_0} (-\frac{\vec{r_2} \cdot \vec{\Delta r}}{r_0^2}) - \omega_0^2 (\vec{r} \cdot \vec{\Delta r})	\<br>    &amp;= \frac{G}{r_0^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r} - \frac{G}{r_0^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r}	\<br>    &amp;= 0	\<br>    V_{eff}^{2} &amp;= - \frac{G M_1}{r_0} (\frac{3 (\vec{r_1} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2}) \<br>    &amp;- \frac{G M_2}{r_0} (\frac{3 (\vec{r_2} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2}) - \frac{1}{2} \omega_{0}^{2} \vec{\Delta r}^2 \<br>    &amp;= - \frac{3G}{2 r_{0}^{5}} [(M_1 + M_2) (\vec{r} \cdot \vec{\Delta r}) + \frac{M_1 M_2}{M_1 + M_2} (\vec{r_{12}} \cdot \vec{\Delta r}) ] \<br>    V_{eff} &amp;= V_{eff}^{0} + 0 + V_{eff}^{2} + o((\vec{\Delta r})^3)<br>\end{aligned}<br>\tag{taylorBin}<br>$$</p>
+<p>$L_4$ is thus a local smooth maximum with bilinear $V_{eff}^{2}$ convex in the rorating reference system.</p>
+<p>If a tiny celestial body shifts slightly away from $L_4$ and accerlerates for a while, its respective velocity $\Delta v$ satisfy</p>
+<p>$$<br>\begin{aligned}<br>    (\Delta v)^2 &amp;\sim - V_{eff}(\Delta r) \sim \frac{GM}{r_0^3} (\Delta r)^2<br>\end{aligned}<br>$$</p>
+<p>and the Coriolis force will bound it with an orbit with radius $r_{\Delta}$</p>
+<p>$$<br>\begin{aligned}<br>    \frac{(\Delta v)^2}{r_{\Delta}} &amp;\sim (\Delta v) \omega \sim \sqrt{\frac{GM}{r_0^3}} (\Delta v)<br>\end{aligned}<br>$$</p>
+<p>we got</p>
+<p>$$<br>\begin{aligned}<br>    r_{\Delta} &amp;\sim \Delta r<br>\end{aligned}<br>$$</p>
+<p>Thus the stability around $L_4$ is irrelevant to shift scale $\Delta r$</p>
+<p>More accurate differential equation calculation implies that celestial bodies around $L_4$ are bounded by Coriolis force under certain condition (the mass ratio boundary $\frac{M_1}{M_2} &gt; R_{crit}$ )</p>
 
                 
             </div>
@@ -440,7 +460,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://bosonicli.github.io/2022/07/13/huan-ying-lai-dao-bosonicli-de-ge-ren-bo-ke/">http://bosonicli.github.io/2022/07/13/huan-ying-lai-dao-bosonicli-de-ge-ren-bo-ke/</a>
+                    <a href="http://bosonicli.github.io/2022/07/16/2022-07-16-la-ge-lang-ri-dian/">http://bosonicli.github.io/2022/07/16/2022-07-16-la-ge-lang-ri-dian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -478,8 +498,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Blog/">
-                                    <span class="chip bg-color">Blog</span>
+                                <a href="/tags/Physics/">
+                                    <span class="chip bg-color">Physics</span>
                                 </a>
                             
                         </div>
@@ -649,9 +669,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/07/16/2022-07-16-la-ge-lang-ri-dian/">
                     <div class="card-image">
@@ -669,9 +690,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -680,6 +701,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -698,13 +720,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/13/2022-07-13-ge-yu-le-ju-tou-shi-zhi-gui-mo/">
+                <a href="/2022/07/13/huan-ying-lai-dao-bosonicli-de-ge-ren-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="2022-07-13-各娱乐巨头市值规模">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="欢迎来到Bosonicli的个人博客">
                         
-                        <span class="card-title">2022-07-13-各娱乐巨头市值规模</span>
+                        <span class="card-title">欢迎来到Bosonicli的个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -728,8 +750,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Finance/">
-                        <span class="chip bg-color">Finance</span>
+                    <a href="/tags/Blog/">
+                        <span class="chip bg-color">Blog</span>
                     </a>
                     
                 </div>
