@@ -9,4 +9,4 @@ package-lock.json
 coverage/
 .tmp*
 .vscode
-_site/
+docs/_site/

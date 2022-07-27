@@ -1,4 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-25T17:07:32+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">2022-0725 - 黑洞视界的扩张</title><link href="http://localhost:4000/2022/07/25/%E9%BB%91%E6%B4%9E%E8%A7%86%E7%95%8C%E7%9A%84%E6%89%A9%E5%BC%A0.html" rel="alternate" type="text/html" title="2022-0725 - 黑洞视界的扩张" /><published>2022-07-25T00:00:00+08:00</published><updated>2022-07-25T00:00:00+08:00</updated><id>http://localhost:4000/2022/07/25/%E9%BB%91%E6%B4%9E%E8%A7%86%E7%95%8C%E7%9A%84%E6%89%A9%E5%BC%A0</id><content type="html" xml:base="http://localhost:4000/2022/07/25/%E9%BB%91%E6%B4%9E%E8%A7%86%E7%95%8C%E7%9A%84%E6%89%A9%E5%BC%A0.html">&lt;p&gt;物质可以落入黑洞视界吗？&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-27T13:05:15+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">2022-07-27-买房决策中的资产关系分析</title><link href="http://localhost:4000/2022/07/27/%E4%B9%B0%E6%88%BF%E5%86%B3%E7%AD%96%E4%B8%AD%E7%9A%84%E8%B5%84%E4%BA%A7%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90.html" rel="alternate" type="text/html" title="2022-07-27-买房决策中的资产关系分析" /><published>2022-07-27T00:00:00+08:00</published><updated>2022-07-27T00:00:00+08:00</updated><id>http://localhost:4000/2022/07/27/%E4%B9%B0%E6%88%BF%E5%86%B3%E7%AD%96%E4%B8%AD%E7%9A%84%E8%B5%84%E4%BA%A7%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90</id><content type="html" xml:base="http://localhost:4000/2022/07/27/%E4%B9%B0%E6%88%BF%E5%86%B3%E7%AD%96%E4%B8%AD%E7%9A%84%E8%B5%84%E4%BA%A7%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90.html">&lt;h1 id=&quot;买房决策中的资产关系分析&quot;&gt;买房决策中的资产关系分析&lt;/h1&gt;
+
+&lt;h2 id=&quot;主旨&quot;&gt;主旨&lt;/h2&gt;
+
+&lt;p&gt;通过对【立刻买房还是租房观望】问题的研究，建立对现金流、资产增值与债务之间关系的理解&lt;/p&gt;
+
+&lt;h2 id=&quot;研究对象&quot;&gt;研究对象&lt;/h2&gt;
+
+&lt;p&gt;假想一个在某大城市打工的家庭，有一定储蓄，每期有收入结余，在当地有住房需求。目标是若干年时限内在当地拥有一套属于自己的住房。该家庭关注租房/买房市场与政策，对房价变化有一定预期，准备在如下两个方案中做选择：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;马上找符合自身购房条件的住房，贷款上车&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;继续租房观望一段时间，其间自身的储蓄与收入结余继续增值，若干时间后再买房&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;希望建立模型，半定量地描述两种方案的利弊得失&lt;/p&gt;
+
+&lt;h2 id=&quot;困难&quot;&gt;困难&lt;/h2&gt;
+
+&lt;p&gt;以贷款上车，等额本息还款方式为例，该家庭每期收入结余不再承担支付房租的固定损耗，而是一部分用于偿还贷款本金，一部分用于偿还贷款利息，剩余部分存储起来用于增值。贷款本金偿还、贷款利息偿还、储蓄本金增值混杂在一起，不利于定量研究&lt;/p&gt;
+
+&lt;h2 id=&quot;模型&quot;&gt;模型&lt;/h2&gt;
+
+&lt;p&gt;为了对此问题获取较为直观的定向理解，略微牺牲准确性与普适性，提出如下模型：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭现有储蓄 S ，在问题考察期间每期收入结余恒定为 I&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;当地存款贷款利率相同在问题考察期间恒定为 r&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭如果租房，每期支出恒定为 R ，如果立即买房则购房支出为 P0&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭如果观望 T 期，则 T 期后立即买房，购房支出为 Pt 。问题考察期结束时该家庭必然拥有自己的住房，以此为前提对比两种方案利弊得失&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;此模型与现实有一定距离，如现实中存款利率一般低于贷款利率而不会相同，相关讨论见讨论章节&lt;/p&gt;
+
+&lt;h2 id=&quot;分析&quot;&gt;分析&lt;/h2&gt;
+
+&lt;p&gt;做如下分析以简化以上模型：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;引入等效资产“劳动力” $LA = \frac{I}{r}$&lt;/p&gt;
+
+    &lt;p&gt;“劳动力”这一资产在问题考察期间每期固定增值即为收入结余 I&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;引入等效资产“居住权” $Residency$ , 与等效债务“租赁债务” $RD = \frac{R}{r}$&lt;/p&gt;
+
+    &lt;p&gt;把租房获得的居住权视为“资产”，租房行为即租借了价值为  RD 的居住权资产，租借期间享有其每期增值并按期支付 R 的利息，租借结束时归还资产&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭如果买房，假设某期的剩余需偿还房贷本金为 $Residule$，该家庭当期的总储蓄为 $St$ ，则该家庭当期的“净资产”(储蓄-剩余需偿还债务本金) 为 $St-Residule$，下期的储蓄利息收入-债务利息支出为 $St&lt;em&gt;r-Residule&lt;/em&gt;r = (St-Residule)*r$&lt;/p&gt;
+
+    &lt;p&gt;假设该家庭拿出 Repay 以减少剩余需偿还房贷本金，则该家庭当期的“净资产” 为 $(St-Repay)-(Residule)-Repay = St-Residule$，下期的储蓄利息收入-债务利息支出为 $(St-Residule)*r$&lt;/p&gt;
+
+    &lt;p&gt;即，由于假设存款贷款利率相同，该家庭的剩余需偿还债务本金减少对应等值的储蓄本金减少，继而对应下期利息增值/利息支出的等比例减少&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;由此，该家庭的经济模型简化为：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭现有储蓄 S ，及“劳动力资产” L ，每期的增值分别为 $S&lt;em&gt;r$ 与 $L&lt;/em&gt;r$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭如果租房，等效于负债 RD ， 每期支付利息 $RD*r$ ，租借结束则等效债务自动消失&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭如果买房，等效于现有储蓄 S 不减少， 直接背负等值于房产售价 P0 的房贷(不论从储蓄中拿出了多少用于支付首付)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;指标之间有如下关系：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;该家庭现有储蓄不足以覆盖全部购房款，足以覆盖首付，每期收入结余足以覆盖剩余房贷利息，即 $S+LA &amp;gt; P0 &amp;gt; S$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;租售比高于利率，即 $P0&amp;gt;RD , Pt&amp;gt;RD$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;该家庭在立即买房与观望 T 期后立即买房之间做出了选择，考察 T 期后该家庭的资产。由于 T 期后两种方案都有自己的房产，故 T 期后房产价值不计入该家庭资产&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;立即买房，$t=0$ 时该家庭名义总资产为 $S-P0 &amp;lt; 0$ 等效总资产为 $S+LA-P0$, T 期后等效总资产增值 $(S+LA-P0)&lt;em&gt;(1+r)^T-(S+LA-P0)$，总资产为 $(S-P0)+(S+LA-P0)&lt;/em&gt;(1+r)^T-(S+LA-P0)$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;观望 T 期，$t=0$ 时该家庭名义总资产为 $S$ 等效总资产为 $S+LA-RD$, T 期后等效总资产增值 $(S+LA-RD)&lt;em&gt;(1+r)^T-(S+LA-RD)$, 以价格 Pt 购入观望的住房，总资产为 $S+(S+LA-RD)&lt;/em&gt;(1+r)^T-(S+LA-RD)-Pt$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;比较可得，立即上车与观望的临界条件是&lt;/p&gt;
+
+\[\begin{aligned}
+&amp;amp; S+(S+LA-RD)*(1+r)^T-(S+LA-RD)-Pt  \\
+&amp;amp; = (S-P0)+(S+LA-P0)*(1+r)^T-(S+LA-P0)  \\
+&amp;amp; Pt-P0 = (S+LA-RD)|_{0}^{T} - (S+LA-P0)|_{0}^{T}   \\
+&amp;amp; = (P0-RD) * [(1+r)^T-1]   \\
+&amp;amp; Pt-RD = (P0-RD)*(1+r)^T   \\
+&amp;amp; Pt-P0*(1+r)^T = -RD[(1+r)^T-1]    \\
+&amp;amp; \lim_{RD/P0\rightarrow 1} Pt = P0 , \lim_{RD/P0\rightarrow 0} Pt = P0(1+r)^T
+\end{aligned}\]
+
+&lt;p&gt;即，通过早贷款上车，有房租拖累的家庭总资产增值变成了有房贷拖累的家庭总资产增值(房贷的拖累大于房租的拖累)，房价的上涨能否弥补这一减少，决定了早上车是否有利。&lt;/p&gt;
+
+&lt;p&gt;亦即，购房后出租能给家庭总资产带来的额外收益+房价上涨的收益是否能够弥补购房带来的资金与后续收益损失&lt;/p&gt;
+
+&lt;p&gt;亦即，房价偏离租售平衡的部分要按复利增值，否则就是亏的&lt;/p&gt;
+
+&lt;h2 id=&quot;案例&quot;&gt;案例&lt;/h2&gt;
+
+&lt;p&gt;假设一对年轻北漂夫妻，看中一套现售价400的老破小(资金单位均为万)，考虑马上贷款上车还是10年后上车的问题。&lt;/p&gt;
+
+&lt;p&gt;两家现有储蓄200，年收入结余20，(10年内不生子，无变化)，年租房支出8。&lt;/p&gt;
+
+&lt;p&gt;该市存贷款年利率在10年内恒定为4%(一些理财定存能到3.5%，购房商贷利率5.2%，公积金贷款利率3.25%，大差不差)&lt;/p&gt;
+
+&lt;p&gt;则对该夫妻而言&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;$LA = 500, S+LA = 700$ ,每年“增值” $(S+LA)&lt;em&gt;r=28$， 其中两家现有储蓄利息收益 $S&lt;/em&gt;r = 8$， 自身收入结余 $LA*r = 20$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$(1+r)^T-1 \approx 0.48$, 即“等效总资产”在10年内“增值” 48%&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$PD = R/r = 200, (S+LA-RD)=500, (S+LA-P0)=300$, 临界条件是 $Pt-P0 = 96$, 即10年内该住房上涨96万元以下则观望划算，否则立即上车划算&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Finance" /><summary type="html">买房决策中的资产关系分析</summary></entry><entry><title type="html">2022-07-25 - 黑洞视界的扩张</title><link href="http://localhost:4000/2022/07/25/%E9%BB%91%E6%B4%9E%E8%A7%86%E7%95%8C%E7%9A%84%E6%89%A9%E5%BC%A0.html" rel="alternate" type="text/html" title="2022-07-25 - 黑洞视界的扩张" /><published>2022-07-25T00:00:00+08:00</published><updated>2022-07-25T00:00:00+08:00</updated><id>http://localhost:4000/2022/07/25/%E9%BB%91%E6%B4%9E%E8%A7%86%E7%95%8C%E7%9A%84%E6%89%A9%E5%BC%A0</id><content type="html" xml:base="http://localhost:4000/2022/07/25/%E9%BB%91%E6%B4%9E%E8%A7%86%E7%95%8C%E7%9A%84%E6%89%A9%E5%BC%A0.html">&lt;p&gt;物质可以落入黑洞视界吗？&lt;/p&gt;
 
 &lt;p&gt;由于时间在黑洞事件视界面变为无限慢，物质穿过视界落入黑洞变成了一个无法在有限时间内完成的过程。因而黑洞不会像朴素想像的那样通过吸收物质而增大，而是会始终保持初始的大小。&lt;/p&gt;
 
@@ -44,7 +188,7 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">2022-07-10 - 使用Jekyll部署GitHub-Pages</title><link href="http://localhost:4000/2022/07/24/%E4%BD%BF%E7%94%A8Jekyll%E5%9C%A8Github-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="2022-07-10 - 使用Jekyll部署GitHub-Pages" /><published>2022-07-24T00:00:00+08:00</published><updated>2022-07-24T00:00:00+08:00</updated><id>http://localhost:4000/2022/07/24/%E4%BD%BF%E7%94%A8Jekyll%E5%9C%A8Github-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/2022/07/24/%E4%BD%BF%E7%94%A8Jekyll%E5%9C%A8Github-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;Use Jekyll to deploy blog on GitHub pages&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><summary type="html">Use Jekyll to deploy blog on GitHub pages</summary></entry><entry><title type="html">2022-07-16-拉格朗日点</title><link href="http://localhost:4000/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html" rel="alternate" type="text/html" title="2022-07-16-拉格朗日点" /><published>2022-07-17T03:08:05+08:00</published><updated>2022-07-17T03:08:05+08:00</updated><id>http://localhost:4000/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9</id><content type="html" xml:base="http://localhost:4000/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html">&lt;h2 id=&quot;tidal-force&quot;&gt;Tidal force&lt;/h2&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">2022-07-10 - 使用Jekyll在GitHub-Pages 上部署博客</title><link href="http://localhost:4000/2022/07/24/%E4%BD%BF%E7%94%A8Jekyll%E5%9C%A8Github-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="2022-07-10 - 使用Jekyll在GitHub-Pages 上部署博客" /><published>2022-07-24T00:00:00+08:00</published><updated>2022-07-24T00:00:00+08:00</updated><id>http://localhost:4000/2022/07/24/%E4%BD%BF%E7%94%A8Jekyll%E5%9C%A8Github-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/2022/07/24/%E4%BD%BF%E7%94%A8Jekyll%E5%9C%A8Github-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;Use Jekyll to deploy blog on GitHub pages&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><summary type="html">Use Jekyll to deploy blog on GitHub pages</summary></entry><entry><title type="html">2022-07-16-拉格朗日点</title><link href="http://localhost:4000/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html" rel="alternate" type="text/html" title="2022-07-16-拉格朗日点" /><published>2022-07-17T03:08:05+08:00</published><updated>2022-07-17T03:08:05+08:00</updated><id>http://localhost:4000/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9</id><content type="html" xml:base="http://localhost:4000/2022/07/17/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9.html">&lt;h2 id=&quot;tidal-force&quot;&gt;Tidal force&lt;/h2&gt;
 
 \[\begin{aligned}
     (1+x)^{-\frac{3}{2}} &amp;amp;= 1 + (-\frac{3}{2} ) x + (\frac{15}{8}) x^{2} + o(x^{3})
@@ -143,7 +287,11 @@
 
 &lt;p&gt;Thus the stability around $L_4$ is irrelevant to shift scale $\Delta r$&lt;/p&gt;
 
-&lt;p&gt;More accurate differential equation calculation implies that celestial bodies around $L_4$ are bounded by Coriolis force under certain condition (the mass ratio boundary $\frac{M_1}{M_2} &amp;gt; R_{crit}$ )&lt;/p&gt;</content><author><name></name></author><category term="Physics" /><summary type="html">Tidal force</summary></entry><entry><title type="html">2022-07-13-各娱乐巨头市值规模</title><link href="http://localhost:4000/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1.html" rel="alternate" type="text/html" title="2022-07-13-各娱乐巨头市值规模" /><published>2022-07-13T23:05:56+08:00</published><updated>2022-07-13T23:05:56+08:00</updated><id>http://localhost:4000/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1</id><content type="html" xml:base="http://localhost:4000/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1.html">&lt;p&gt;作为一个游戏党、美剧党，有时会经常奇怪那些好莱坞娱乐业巨头之间的关系。今天大致梳理了一下，主要关注各公司的规模。&lt;/p&gt;
+&lt;p&gt;More accurate differential equation calculation implies that celestial bodies around $L_4$ are bounded by Coriolis force under certain condition (the mass ratio boundary $\frac{M_1}{M_2} &amp;gt; R_{crit}$ )&lt;/p&gt;</content><author><name></name></author><category term="Physics" /><summary type="html">Tidal force</summary></entry><entry><title type="html">欢迎来到Bosonicli的个人博客</title><link href="http://localhost:4000/2022/07/14/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0Bosonicli%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="欢迎来到Bosonicli的个人博客" /><published>2022-07-14T05:37:15+08:00</published><updated>2022-07-14T05:37:15+08:00</updated><id>http://localhost:4000/2022/07/14/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0Bosonicli%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/2022/07/14/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0Bosonicli%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;来到这里，便是缘分。这里是Bosonicli的个人博客。&lt;/p&gt;
+
+&lt;p&gt;不是技术博客。我希望它成为一个随手记录的地方。代码、物理、技术、哲学、胡思乱想，甚至影评动漫，什么都有可能写。&lt;/p&gt;
+
+&lt;p&gt;如果有幸有那么一瞬让你，素昧平生的朋友，感到点进这个博客没有浪费时间，我的记录就有意义。&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><summary type="html">来到这里，便是缘分。这里是Bosonicli的个人博客。</summary></entry><entry><title type="html">2022-07-13-各娱乐巨头市值规模</title><link href="http://localhost:4000/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1.html" rel="alternate" type="text/html" title="2022-07-13-各娱乐巨头市值规模" /><published>2022-07-13T23:05:56+08:00</published><updated>2022-07-13T23:05:56+08:00</updated><id>http://localhost:4000/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1</id><content type="html" xml:base="http://localhost:4000/2022/07/13/%E5%90%84%E5%A8%B1%E4%B9%90%E5%B7%A8%E5%A4%B4%E5%B8%82%E5%80%BC%E8%A7%84%E6%A8%A1.html">&lt;p&gt;作为一个游戏党、美剧党，有时会经常奇怪那些好莱坞娱乐业巨头之间的关系。今天大致梳理了一下，主要关注各公司的规模。&lt;/p&gt;
 
 &lt;p&gt;比如人称的好莱坞五大巨头的六七个公司(五大巨头有六个是常识)：&lt;/p&gt;
 
@@ -189,7 +337,7 @@
 
 &lt;p&gt;金融业方面，华尔街几大巨头1000亿上下，工行折合2500亿，唯一的异类是 VISA 4000亿，信用卡原来这么赚钱的吗？&lt;/p&gt;
 
-&lt;p&gt;可能汽车、能源、金融这种行业不像互联网那么集中，所以没有超过万亿的公司。&lt;/p&gt;</content><author><name></name></author><category term="Finance" /><summary type="html">作为一个游戏党、美剧党，有时会经常奇怪那些好莱坞娱乐业巨头之间的关系。今天大致梳理了一下，主要关注各公司的规模。</summary></entry><entry><title type="html">2022-07-10 - 使用Hexo部署GitHub-Pages</title><link href="http://localhost:4000/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="2022-07-10 - 使用Hexo部署GitHub-Pages" /><published>2022-07-11T02:55:40+08:00</published><updated>2022-07-11T02:55:40+08:00</updated><id>http://localhost:4000/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;本小白第一天尝鲜用 Hexo + GitHub Pages 部署个人博客 ，浪费了一天踩各种坑，记录一下经验教训。&lt;/p&gt;
+&lt;p&gt;可能汽车、能源、金融这种行业不像互联网那么集中，所以没有超过万亿的公司。&lt;/p&gt;</content><author><name></name></author><category term="Finance" /><summary type="html">作为一个游戏党、美剧党，有时会经常奇怪那些好莱坞娱乐业巨头之间的关系。今天大致梳理了一下，主要关注各公司的规模。</summary></entry><entry><title type="html">2022-07-10 - 使用Hexo在GitHub-Pages上部署博客</title><link href="http://localhost:4000/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html" rel="alternate" type="text/html" title="2022-07-10 - 使用Hexo在GitHub-Pages上部署博客" /><published>2022-07-11T02:55:40+08:00</published><updated>2022-07-11T02:55:40+08:00</updated><id>http://localhost:4000/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/2022/07/11/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8GitHub-Pages%E4%B8%8A%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html">&lt;p&gt;本小白第一天尝鲜用 Hexo + GitHub Pages 部署个人博客 ，浪费了一天踩各种坑，记录一下经验教训。&lt;/p&gt;
 
 &lt;p&gt;首先，我想要做什么？为什么用 Hexo + GitHub Pages ？&lt;/p&gt;
 
@@ -257,4 +405,34 @@
 
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><summary type="html">My first adventure to Hexo</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><summary type="html">My first adventure to Hexo</summary></entry><entry><title type="html">Hello World</title><link href="http://localhost:4000/2022/07/09/hello-world.html" rel="alternate" type="text/html" title="Hello World" /><published>2022-07-09T10:30:00+08:00</published><updated>2022-07-09T10:30:00+08:00</updated><id>http://localhost:4000/2022/07/09/hello-world</id><content type="html" xml:base="http://localhost:4000/2022/07/09/hello-world.html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&quot;create-a-new-post&quot;&gt;Create a new post&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo new &lt;span class=&quot;s2&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;run-server&quot;&gt;Run server&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;generate-static-files&quot;&gt;Generate static files&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo generate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;deploy-to-remote-sites&quot;&gt;Deploy to remote sites&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo deploy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/one-command-deployment.html&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;</content><author><name>bosonicli</name></author><summary type="html">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</summary></entry></feed>
