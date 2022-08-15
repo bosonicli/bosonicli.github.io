@@ -4,6 +4,7 @@ date: 2022-07-10 18:55:40
 tags:
 - Blog
 ---
+
 本小白第一天尝鲜用 Hexo + GitHub Pages 部署个人博客 ，浪费了一天踩各种坑，记录一下经验教训。
 
 首先，我想要做什么？为什么用 Hexo + GitHub Pages ？
