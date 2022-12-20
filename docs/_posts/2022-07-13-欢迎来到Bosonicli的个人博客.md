@@ -1,8 +1,9 @@
 ---
 title: 欢迎来到Bosonicli的个人博客
 date: 2022-07-13 21:37:15
+author: bosonicli
 tags:
-- Blog
+-   Blog
 ---
 
 来到这里，便是缘分。这里是Bosonicli的个人博客。

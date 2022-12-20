@@ -1,8 +1,9 @@
 ---
 title: 2022-07-10 - 使用Hexo在GitHub-Pages上部署博客
 date: 2022-07-10 18:55:40
+author: bosonicli
 tags:
-- Blog
+-   Blog
 ---
 
 本小白第一天尝鲜用 Hexo + GitHub Pages 部署个人博客 ，浪费了一天踩各种坑，记录一下经验教训。

@@ -257,8 +257,8 @@ DEPENDENCIES
   jekyll (~> 3.9.2)
   jekyll-feed (~> 0.15.1)
   jekyll-remote-theme
-  jekyll-theme-minimal (~> 0.2.0)
   kramdown-parser-gfm
+  minima (~> 2.5.1)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.0)

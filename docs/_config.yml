@@ -26,10 +26,9 @@ github_username:  bosonicli
 
 # Build settings
 markdown: kramdown
-# theme: minima
-theme: jekyll-theme-minimal
+theme: minima
+# theme: jekyll-theme-minimal
 # theme: jekyll-text-theme
-# theme: just-the-docs
 # remote-theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
