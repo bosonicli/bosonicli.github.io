@@ -11,6 +11,6 @@ My first adventure to Hexo
 
 ## Reference
 
-[Hexo][Hexo]
+[HexoTest][Hexo]
 
 [Hexo]:https://hexo.io/zh-cn/
