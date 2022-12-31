@@ -1,5 +1,5 @@
 ---
-title: 2022-07-10 - 使用Hexo在GitHub-Pages上部署博客
+title: 2022-07-10 - 使用 Hexo 在 GitHub-Pages 上部署博客
 date: 2022-07-10 18:55:40
 author: bosonicli
 tags:
