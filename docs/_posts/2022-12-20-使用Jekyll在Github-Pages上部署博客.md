@@ -26,7 +26,7 @@ tags:
 
 最初选用 [Hexo][Hexo] 作为工具时，看中的是 [Github-Pages][Github-Pages] 能同时扮演2/3 两个角色。但美中不足，Hexo的文本转网页渲染和托管部署还得分开两步来做，这也是我折腾好半天的原因。
 
-因此稍加思考我还是转向了 [jekyll][jekyll] 这款工具。 Github-Pages 内置 jekyll 渲染引擎，1/2/3功能完全整合到了一起。我要做的只是以 `.md` 形式专心写内容，然后同步上传到 [Github][Github] 仓库， Github 会自动替我渲染、发布。这已经基本是我理想中的个人博客工具了。
+因此稍加思考我还是转向了 [jekyll][jekyllcn] 这款工具。 Github-Pages 内置 jekyll 渲染引擎，1/2/3功能完全整合到了一起。我要做的只是以 `.md` 形式专心写内容，然后同步上传到 [Github][Github] 仓库， Github 会自动替我渲染、发布。这已经基本是我理想中的个人博客工具了。
 
 可惜 jekyll 对 Latex 公式的默认支持不顺畅，直接导致我希望通过博客传达的内容被阉割了一半，直到今天我才解决掉这个很基本的小问题，博客才终于能正常运行了。
 
@@ -106,7 +106,7 @@ layout: page-type
 
 [Github-Pages]:https://pages.github.com
 
-[jekyll]:https://jekyll.com.cn
+[jekyllcn]:https://jekyll.com.cn
 
 [Hexo]:https://hexo.io/zh-cn
 
