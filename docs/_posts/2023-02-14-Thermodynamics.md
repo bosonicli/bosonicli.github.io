@@ -34,7 +34,7 @@ $$
     p(E) dE &= \frac{e^{ -\frac{E}{kT}} dE }{ \int_{0}^{\infty}  e^{-\frac{E}{kT}} dE } \\
     \bar{E} &= \int_{0}^{\infty} E p(E) dE  \\
     &= \frac{ \int_{0}^{\infty} E e^{-\frac{E}{kT}} dE }{ \int_{0}^{\infty} e^{-\frac{E}{kT}} dE }  \\
-    & \overset{x=\frac{E}{kT}}{=} kT \frac{ \int_{0}^{\infty} x e^{-x} dx }{ \int_{0}^{\infty} e^{-x} dx }  \\
+    & \overset{ x = E / k T }{=} kT \frac{ \int_{0}^{\infty} x e^{-x} dx }{ \int_{0}^{\infty} e^{-x} dx }  \\
     &= kT
 \end{aligned}
 $$
@@ -69,7 +69,7 @@ $$
 \begin{aligned}
     d N(m) &= \frac{1}{8} 4 \pi m^2 d m \\
     & \overset{ m = k L / \pi }{=} \frac{L^3}{2 \pi^2} k^2 dk  \\
-    & \overset{ k = 2 \pi \nu /c
+    & \overset{ k = 2 \pi \nu / c
     }{=} \frac{4 \pi V}{c^3} \nu^2 d\nu
 \end{aligned}
 $$
