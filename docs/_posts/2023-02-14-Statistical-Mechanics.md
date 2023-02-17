@@ -1,5 +1,5 @@
 ---
-title: 2023-02-14 - Thermodynamics
+title: 2023-02-14 - Statistical Mechanics
 date: 2023-02-14
 author: bosonicli
 tags:
@@ -8,7 +8,7 @@ tags:
 
 [toc]
 
-# Thermodynamic Potential
+# Canonical Ensemble
 
 $$
 \begin{aligned}
@@ -16,6 +16,20 @@ $$
     H &= U + p V    \\
     F &= U - T S    \\
     G &= U - T S + p V
+\end{aligned}
+$$
+
+Partition Function
+
+$$
+\begin{aligned}
+    Z &= \Sigma_{i} e^{-\frac{E_{i}}{ k T }} = e^{-\frac{F}{ k T }} \\
+    U &= \Sigma_{i} E_{i} \frac{ e^{-\frac{E_{i}}{ k T }} }{Z}  \\
+    &= \frac{ k T^2 }{Z} \frac{ \partial Z }{ \partial T }  \\
+    F & \equiv - k T ln(Z)  \\
+    S & \equiv - \frac{ \partial F }{ \partial T} \vert_{V} \\
+    &= k ln(Z) + \frac{ k T }{Z} \frac{ \partial Z }{ \partial T }  \\
+    &= - \frac{F}{T} + \frac{U}{T}
 \end{aligned}
 $$
 
@@ -127,6 +141,10 @@ $$
     & \propto T^4   \\
     H &= \frac{4}{3} U   \\
     F &= - \frac{1}{3} U  \\
-    G &= 0
+    &= - \frac{\sigma}{3} T^4 V \\
+    G &= 0  \\
+    k ln(Z) &= - k \frac{F}{ k T }  \\
+    &= \frac{\sigma}{3} T^3 V   \\
+    &= \frac{1}{3} \frac{U}{T}
 \end{aligned}
 $$
