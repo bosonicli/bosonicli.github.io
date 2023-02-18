@@ -111,3 +111,19 @@ $$
     \frac{\ddot{a}}{a} &= - \frac{ 4 \pi G }{3} (\rho + \frac{3p}{c^2}) + \frac{ \Lambda c^2 }{3}
 \end{aligned}
 $$
+
+Static Empty Cosmos Metric:
+
+To be continued
+
+# Problems remain
+
++   Cosmos Curvature
+
+    independent with matter ?
+
++   Black Hole Thermodynamics
+
+    Energy and violation of Time-Translational Symmetry
+
++   Redshift myth
