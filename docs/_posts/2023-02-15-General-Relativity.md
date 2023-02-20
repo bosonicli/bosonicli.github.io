@@ -63,46 +63,6 @@ $$
 \end{aligned}
 $$
 
-# Black Hole
-
-Schwartzschild Metric
-
-$$
-\begin{aligned}
-    ds^2 &= -(1-R/r) c^2 dt^2 + (1-R/r)^{-1} dr^2 + r^2 ( d \theta ^2 + sin^2 \theta d \phi ^2 )    \\
-    R &= \frac{2GM}{c^2}
-\end{aligned}
-$$
-
-Kerr-Newman Metric
-
-$$
-\begin{aligned}
-    ds^2 &= - ( \frac{ dr ^2 }{ \Delta } + d \theta ^2 ) \rho^2 + ( c d t - a sin^2 \theta d \phi )^2 \frac{\Delta}{ \rho ^2 } - ( ( r^2 + a^2 )^2 d \phi - a c d t )^2 \frac{ sin^2 \theta }{ \rho ^2 }    \\
-    a &= \frac{J}{Mc}   \\
-    \rho^2 &= r^2 + a^2 cos^2 \theta    \\
-    \Delta &= r^2 - R r + a^2 + r_{Q}^2 \\
-    r_{Q}^2 &= \frac{ Q^2 G }{ 4 \pi \epsilon_{0} c^4 }
-\end{aligned}
-$$
-
-for Kerr Black Hole, \\( r_{Q}^2 = 0 \\)
-
-Kerr Black Hole has ergosphere, outer / inner event horizon, and Ringularity
-
-# Black Hole Thermodynamics
-
-$$
-\begin{aligned}
-    T_{H} &= \frac{ \kappa }{ 2 \pi }   \\
-    S_{H} &= \frac{ A }{ 4 G }  \\
-    \delta M &= T_{H} \delta S_{H} + \Omega_{H} \delta J + \Phi \delta Q    \\
-    M_{irr}^2 &= \frac{ A }{ 16 \pi G^2 }
-\end{aligned}
-$$
-
-However, normal comprehension of energy and thermodynamical quantities does not suit the Black Hole scenario since Time-Translational Symmetry is not preserved. More general comprehension is required.
-
 # Friedmann Equation
 
 $$
@@ -118,12 +78,8 @@ To be continued
 
 # Problems remain
 
-+   Cosmos Curvature
++   Cosmos Curvature \\( k \\)
 
     independent with matter ?
 
-+   Black Hole Thermodynamics
-
-    Energy and violation of Time-Translational Symmetry
-
-+   Redshift myth
++   Redshift myth / Cosmos measure
