@@ -102,12 +102,25 @@ Energy density of radiation
 
 $$
 \begin{aligned}
-    u(\nu) d\nu &= \frac{8\pi}{c^3} \bar{E}_{\nu} \nu^2 d \nu   \\
+    u(\nu) d \nu &= \frac{8\pi}{c^3} \bar{E}_{\nu} \nu^2 d \nu   \\
     &= \frac{ 8 \pi h \nu^3 }{ c^3 } \frac{1}{exp(h\nu/kT)-1} d \nu \\
+    B( \nu , T ) &= \frac{1}{4} u(\nu) c    \\
+    &= \frac{ 2 \pi h \nu^3 }{ c^2 } \frac{1}{exp(h\nu/kT)-1} \\
+    B( \lambda , T ) &= - B( \nu , T ) \frac{ d \nu }{ d \lambda }  \\
+    &= \frac{ 2 \pi h c^2 }{ \lambda^5 } \frac{1}{ exp( h c / \lambda k T ) - 1 } \\
     u &= \int_{0}^{\infty} u(\nu) d \nu \\
     & \overset{ x = h \nu / k T }{=} \frac{ 8 \pi h }{c^3} (\frac{kT}{h})^4 \int_{0}^{\infty} \frac{x^3 dx}{e^x-1}  \\
     &= \frac{ 8 \pi h }{c^3} (\frac{kT}{h})^4 \frac{\pi^4}{15}  \\
     &= \Sigma T^4
+\end{aligned}
+$$
+
+Wien's Displacement Law
+
+$$
+\begin{aligned}
+    h c / \lambda_{peak} k T & \approx 4.965    \\
+    h \nu_{peak} / k T & \approx 2.82
 \end{aligned}
 $$
 
