@@ -1,5 +1,5 @@
 ---
-title: 2023-01-11 - 空间站力学
+title: 2023-01-11 - Space Colony
 date: 2023-01-11
 author: bosonicli
 tags:

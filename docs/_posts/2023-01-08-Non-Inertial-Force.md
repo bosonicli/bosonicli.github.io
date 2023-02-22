@@ -1,5 +1,5 @@
 ---
-title: 2023-01-08 - 非惯性力
+title: 2023-01-08 - Non Inertial Force
 date: 2023-01-08
 author: bosonicli
 tags:
