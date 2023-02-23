@@ -44,3 +44,5 @@ $$
     Sampling Theory
     
     frequency encoding limit
+
++   Holography

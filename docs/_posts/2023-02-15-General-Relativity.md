@@ -63,23 +63,10 @@ $$
 \end{aligned}
 $$
 
-# Friedmann Equation
-
-$$
-\begin{aligned}
-    \frac{ \dot{a}^2 + k c^2 }{a^2} &= \frac{ 8 \pi G \rho + \Lambda c^2 }{3}  \\
-    \frac{\ddot{a}}{a} &= - \frac{ 4 \pi G }{3} (\rho + \frac{3p}{c^2}) + \frac{ \Lambda c^2 }{3}
-\end{aligned}
-$$
-
-Static Empty Cosmos Metric:
-
-To be continued
+# Gravitational Wave
 
 # Problems remain
 
-+   Cosmos Curvature \\( k \\)
++   Gravitational Wave
 
-    independent with matter ?
-
-+   Redshift myth / Cosmos measure
++   Sea Horizon
