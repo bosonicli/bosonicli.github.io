@@ -14,9 +14,9 @@ It can be easily deduced that, in an inertial gravity force field, we consider a
 
 $$
 \begin{aligned}
-	V_{g} &= - \frac{k}{\vert \vec{r} \vert} \\
+	V_{g} &= - \frac{k}{ \lvert \vec{r} \rvert} \\
 	&= V_{g}^{0} + V_{g}^{1} + V_{g}^{2} + o((\Delta r)^3) \\
-	V_{g}^{0} &= V_{c} = - \frac{k}{\vert \vec{r_0} \vert}	\\
+	V_{g}^{0} &= V_{c} = - \frac{k}{ \lvert \vec{r_0} \rvert}	\\
 	V_{g}^{1} &= - \frac{k}{r_0} (- \frac{ \vec{r_0} \cdot \vec{\Delta r}}{r_0^2}) \\
 	V_{g}^{2} &= - \frac{k}{r_0} (\frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 r_0^4} - \frac{ (\vec{\Delta r})^2}{2 r_0^2})
 \end{aligned}
@@ -69,7 +69,7 @@ $$
 \tag{cent_binary}
 $$
 
-Now we consider the Lagrangian point \\( L_4 \\) locating at the vertex of an equilateral triangle connecting \\( M_1 \\) and \\( M_2 \\) ( \\( \vert r_{1}^{0} \vert = \vert r_{2}^{0} \vert = r_{12} = R \\) ).
+Now we consider the Lagrangian point \\( L_4 \\) locating at the vertex of an equilateral triangle connecting \\( M_1 \\) and \\( M_2 \\) ( \\( \lvert r_{1}^{0} \rvert = \lvert r_{2}^{0} \rvert = r_{12} = R \\) ).
 
 In the rotating celestial system, the effective potential around \\( L_4 \\) is
 

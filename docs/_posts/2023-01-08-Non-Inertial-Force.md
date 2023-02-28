@@ -44,7 +44,7 @@ Gravity \\( \vec{a_{g}} \\) can be expanded as series
 
 $$
 \begin{aligned}
-	\vec{a}_{g} &= - \frac{k}{\vert\vec{r}\vert^3} \vec{r}	\\
+	\vec{a}_{g} &= - \frac{k}{ \lvert \vec{r} \rvert ^3 } \vec{r}	\\
 	&= - \frac{k}{r_0^3} (\frac{\vec{r}^2}{\vec{r_0}^2})^{-\frac{3}{2}} \vec{r}	\\
 	&= - \frac{k}{r_0^3} (1 + \frac{(\vec{r_0}+\vec{\Delta r})^2-\vec{r_0}^2}{\vec{r_0}^2})^{-\frac{3}{2}} (\vec{r_0} + \vec{\Delta r})	\\
 	&= - \frac{k}{r_0^3} (1 + \frac{2 \vec{r_0} \cdot \vec{\Delta r} + (\vec{\Delta r})^2}{\vec{r_0}^2})^{-\frac{3}{2}} (\vec{r_0} + \vec{\Delta r})	\\
@@ -73,9 +73,9 @@ There is also another way to describe gravity in a non-inertial reference frame.
 
 $$
 \begin{aligned}
-	V_{c} &= - \frac{k}{\vert \vec{r_0} \vert} \\
-	V_{g} &= - \frac{k}{\vert \vec{r} \vert} \\
-	&= - \frac{k}{\vert \vec{r_0} \vert} (\frac{\vec{r}^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
+	V_{c} &= - \frac{k}{ \lvert \vec{r_0} \rvert } \\
+	V_{g} &= - \frac{k}{ \lvert \vec{r} \rvert } \\
+	&= - \frac{k}{ \lvert \vec{r_0} \rvert } (\frac{\vec{r}^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
 	&= - \frac{k}{r_0} (1 + \frac{(\vec{r_0}+\vec{\Delta r})^2-\vec{r_0}^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
 	&= - \frac{k}{r_0} (1 + \frac{2 \vec{r_0} \cdot \vec{\Delta r} + (\vec{\Delta r})^2}{\vec{r_0}^2})^{-\frac{1}{2}} \\
 	&= - \frac{k}{r_0} (1 - \frac{ \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2} + \frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 \vec{r_0}^4} - \frac{ (\vec{\Delta r})^2}{2 (\vec{r_0})^2}) + o((\Delta r)^3)	\\
