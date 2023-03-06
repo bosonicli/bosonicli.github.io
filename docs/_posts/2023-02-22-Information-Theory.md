@@ -23,7 +23,7 @@ Renyi Entropy
 $$
 \begin{aligned}
     H^{\alpha} (X) & \equiv \frac{1}{1-\alpha} log( \Sigma_{i} p_{i}^{\alpha})    \\
-    \lim_{ \alpha \rightarrow 1 } &= H (X)
+    \lim_{ \alpha \to 1 } &= H (X)
 \end{aligned}
 $$
 

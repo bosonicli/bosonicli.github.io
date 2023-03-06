@@ -13,7 +13,7 @@ tags:
 $$
 \begin{aligned}
     \hat{U} & \equiv e^{ - i \theta^{a} \hat{T^{a}} } \\
-    \hat{A} & \rightarrow \hat{U} \hat{A} \hat{U^{\dagger}}
+    \hat{A} & \to \hat{U} \hat{A} \hat{U^{\dagger}}
 \end{aligned}
 $$
 
@@ -32,12 +32,12 @@ $$
 \begin{aligned}
     \hat{U} (\theta^{2}) &= e^{ - i \frac{1}{2} ( \frac{\theta^{2}}{2} ) \sigma^{2} } \\
     &= cos ( \frac{\theta^{2}}{2} ) - i sin ( \frac{\theta^{2}}{2} ) \sigma^{2} \\
-    \sigma^{1} & \rightarrow \hat{U} ( \theta^{2} ) \sigma^{1} \hat{U^{\dagger}} ( \theta^{2} ) \\
+    \sigma^{1} & \to \hat{U} ( \theta^{2} ) \sigma^{1} \hat{U^{\dagger}} ( \theta^{2} ) \\
     &= ( cos ( \frac{\theta^{2}}{2} ) \mathbf{I_{2}} - i sin ( \frac{\theta^{2}}{2} ) \sigma^{2} ) \sigma^{1} ( cos ( \frac{\theta^{2}}{2} ) + i sin ( \frac{\theta^{2}}{2} ) \sigma^{2} ) \\
     &= cos (\theta^{2}) \sigma^{1} + ( i sin (\theta^{2}) ) \sigma^{1} \sigma^{2} \\
     &= cos (\theta^{2}) \sigma^{1} - sin (\theta^{2}) \sigma^{3}    \\
     if & \quad \theta^{2} = \pm \frac{\pi}{2}   \\
-    \sigma^{1} & \rightarrow \mp \sigma^{3} \\
-    \sigma^{3} & \rightarrow \pm \sigma^{1} 
+    \sigma^{1} & \to \mp \sigma^{3} \\
+    \sigma^{3} & \to \pm \sigma^{1} 
 \end{aligned}
 $$
