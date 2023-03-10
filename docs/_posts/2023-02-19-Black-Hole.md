@@ -55,7 +55,7 @@ $$
     &= 4 \pi (\frac{2G}{c^2})^2 \Delta (M^2)    \\
     &= \frac{ 16 G^2 }{c^4} \frac{ h c }{G} \\
     &= \frac{16 G h }{c^3}  \\
-    \ell_{p} &= \sqrt{ \frac{ \hbar G }{c^3} }
+    \mathcal{l}_{p} &= \sqrt{ \frac{ \hbar G }{c^3} }
 \end{aligned}
 $$
 
