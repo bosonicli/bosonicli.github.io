@@ -17,6 +17,14 @@ $$
 \end{aligned}
 $$
 
+$$
+\begin{aligned}
+    e^{A} B e^{-A} &= \Sigma_{n} \frac{ad^{n}(A,B)}{n!} \\
+    ad^{0}(A,B) & \equiv B  \\
+    ad^{n}(A,B) & \equiv [ A , ad^{n-1}(A,B) ]
+\end{aligned}
+$$
+
 # SU(2)
 
 $$
@@ -41,3 +49,7 @@ $$
     \sigma^{3} & \to \pm \sigma^{1} 
 \end{aligned}
 $$
+
+# Problems remain
+
++   Generator Commutator

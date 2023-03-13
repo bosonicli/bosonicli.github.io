@@ -1,5 +1,5 @@
 ---
-title: 2023-02-18 - Symmetry
+title: 2023-02-18 - Field Theory
 date: 2023-02-18
 author: bosonicli
 tags:
@@ -107,6 +107,21 @@ $$
 \end{aligned}
 $$
 
+# Yukawa
+
+$$
+\begin{aligned}
+    \mathcal{L} &= \frac{1}{2} ( \partial_{\mu} \phi )^2 + J \phi   \\
+    &= \frac{1}{2} ( \partial_{t} \phi )^2 - V( J , \phi )  \\
+    V( J , \phi ) &= \frac{1}{2} ( \nabla \phi )^2 - J \phi \\
+    \pi &= \frac{ \delta \mathcal{L} }{ \delta ( \partial_{t} \phi ) } = \partial_{t} \phi  \\
+    \mathcal{H} &= \pi \dot{\phi} - \mathcal{L} \\
+    &= \frac{1}{2} \pi^2 + V( J , \phi )
+\end{aligned}
+$$
+
+Where \\( J \\) is the source of field in Lagrangian. As we can see, it can be deducted that \\( J \\) is also the interactive energy Charge in the field. This might be an analogy of the identicality of Gravity Mass and Inertial Mass.
+
 # Non-Abelian Gauge Field
 
 Under Global Unitary Transformation
@@ -141,3 +156,5 @@ $$
 # Problems remain
 
 +   Current and Local Transformation
+
++   Yukawa Coupling
