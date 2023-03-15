@@ -83,7 +83,7 @@ Qualitative analysis of the dynamics: Assume the astronaut orbits around the spa
 
 +   Averagely, orbit of \\( \vec{\delta r} \\) operates with \\( - \vec{\omega} \\) ;
 
-+   At vertex along the \\( \hat{r} \\) direction, \\( \vec{a}_{Tide} \\) points outwards, so velocity should be large to generate massive \\( \vec{a}_{c} \\) ;
++   At vertex along the \\( \hat{r} \\) direction, \\( \vec{a_{Tide}} \\) points outwards, so velocity should be large to generate massive \\( \vec{a_{c}} \\) ;
 
 +   At vertex along the \\( \hat{\theta} \\) direction, \\( \vec{a}_{Tide} \\) points inwards, enough to keep the orbit bound, so velocity should be small;
 
