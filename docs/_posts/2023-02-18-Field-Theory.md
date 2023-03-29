@@ -61,13 +61,17 @@ Hamiltonian
 $$
 \begin{aligned}
     \pi & \equiv \frac{ \delta \mathcal{L} }{ \delta ( \partial_{0} \phi ) }    \\
-    \hat{H} & \equiv \pi \partial_{0} \phi - \mathcal{L} 
+    \mathcal{H} & \equiv \pi \partial_{0} \phi - \mathcal{L}    \\
+    \frac{ \partial \mathcal{H} }{ \partial \pi } &= \partial_{0} \phi  \\
+    \frac{ \partial \mathcal{H} }{ \partial \phi } &= - \frac{ \partial \mathcal{L} }{ \partial \phi }  \\
+    &= - \partial_{0} ( \frac{ \partial \mathcal{L} }{ \partial  ( \partial_{0} \phi ) } )    \\
+    &= - \partial_{0} \pi
 \end{aligned}
 $$
 
 Since Momentum \\( \pi \\) is related to time factor, the Hamiltonian \\( \hat{H} \\) itself is not Lorentz invariant
 
-# Spacetime Translational Symmetry
+# Translational Symmetry
 
 $$
 \begin{aligned}
@@ -85,11 +89,18 @@ $$
     j^{\mu} &= ( \mathcal{L} g_{\nu}^{\mu} - \frac{ \partial \mathcal{L} }{ \partial ( \partial_{\mu} \phi ) } \partial_{\nu} \phi ) a^{\nu} \\
     &= ( - \mathcal{L} g^{ \mu \nu } + \frac{ \partial \mathcal{L} }{ \partial ( \partial_{\mu} \phi ) } \partial^{\nu} \phi ) a_{\nu}  \\
     & \equiv T^{ \mu \nu } a_{\nu}  \\
-    \partial_{\mu} T^{ \mu \nu } &= 0
+    \partial_{\mu} T^{ \mu \nu } &= 0   \\
+    T^{00} & \equiv E \\
+    T^{0i} & \equiv p^{i}
 \end{aligned}
 $$
 
-Where \\( T^{ \mu \nu } \\) is the E-M Tensor
+Where \\( T^{ \mu \nu } \\) is the Energy-Momentum Tensor, by definition
+
+$$
+\begin{aligned}
+\end{aligned}
+$$
 
 # Massless Free Boson
 
