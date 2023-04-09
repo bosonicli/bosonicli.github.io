@@ -1,5 +1,5 @@
 ---
-title: 2023-03-17 - Superconductivity
+title: Superconductivity
 date: 2023-03-17
 author: bosonicli
 tags:

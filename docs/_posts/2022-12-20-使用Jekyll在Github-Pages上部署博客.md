@@ -1,5 +1,5 @@
 ---
-title: 2022-12-20 - 使用 Jekyll 在 GitHub-Pages 上部署博客
+title: 使用 Jekyll 在 GitHub-Pages 上部署博客
 date: 2022-12-20
 author: bosonicli
 tags:

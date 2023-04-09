@@ -1,5 +1,5 @@
 ---
-title: 2023-02-22 - Information Theory
+title: Information Theory
 date: 2023-02-22
 author: bosonicli
 tags:
@@ -38,6 +38,10 @@ $$
 # Encode
 
 # Problems remain
+
++   Compress
+
+    E-nary
 
 +   Digital signal
 

@@ -1,5 +1,5 @@
 ---
-title: 2022-07-16 - Lagrangian Point
+title: Lagrangian Point
 date: 2022-07-16 19:08:05
 author: bosonicli
 tags:

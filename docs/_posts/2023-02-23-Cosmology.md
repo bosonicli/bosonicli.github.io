@@ -1,5 +1,5 @@
 ---
-title: 2023-02-23 - Cosmology
+title: Cosmology
 date: 2023-02-23
 author: bosonicli
 tags:

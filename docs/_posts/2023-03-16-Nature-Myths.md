@@ -1,5 +1,5 @@
 ---
-title: 2023-03-16 - Nature Myths
+title: Nature Myths
 date: 2023-03-16
 author: bosonicli
 tags:

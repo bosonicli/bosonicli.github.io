@@ -1,5 +1,5 @@
 ---
-title: 2023-04-03 - AstroPhysics
+title: AstroPhysics
 date: 2023-04-03
 author: bosonicli
 tags:

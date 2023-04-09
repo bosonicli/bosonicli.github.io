@@ -1,5 +1,5 @@
 ---
-title: 2023-02-19 - Black Hole
+title: Black Hole
 date: 2023-02-19
 author: bosonicli
 tags:

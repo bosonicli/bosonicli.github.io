@@ -1,5 +1,5 @@
 ---
-title: 2023-01-11 - Space Colony
+title: Space Colony
 date: 2023-01-11
 author: bosonicli
 tags:

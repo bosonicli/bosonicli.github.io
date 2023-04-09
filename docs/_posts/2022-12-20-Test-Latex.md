@@ -1,5 +1,5 @@
 ---
-title: 2022-12-20 - Test Latex
+title: Test Latex
 date: 2022-12-20
 author: bosonicli
 tags:

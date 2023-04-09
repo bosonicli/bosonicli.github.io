@@ -1,5 +1,5 @@
 ---
-title: 2023-02-14 - Statistical Mechanics
+title: Statistical Mechanics
 date: 2023-02-14
 author: bosonicli
 tags:

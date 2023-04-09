@@ -1,5 +1,5 @@
 ---
-title: 2023-02-18 - Field Theory
+title: Field Theory
 date: 2023-02-18
 author: bosonicli
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 2023-02-15 - General Relativity
+title: General Relativity
 date: 2023-02-15
 author: bosonicli
 tags:
