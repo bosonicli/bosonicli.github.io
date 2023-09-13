@@ -132,7 +132,7 @@ $$
 \end{aligned}
 $$
 
-Since \\(\hat{\beta_{1}}\\) is linear combination of random measurement \\(y_{i}\\), it subject to a normal distribution \\( \hat{\beat_{1}} \sim \mathcal{N} (\beta_{1}, \frac{\sigma^2}{S_{XX}}) \\)
+Since \\(\hat{\beta_{1}}\\) is linear combination of random measurement \\(y_{i}\\), it subject to a normal distribution \\( \hat{\beta_{1}} \sim \mathcal{N} (\beta_{1}, \frac{\sigma^2}{S_{XX}}) \\)
 
 $$
 \begin{aligned}
@@ -152,7 +152,9 @@ Then we can estimate the confidence of coefficient
 $$
 \begin{aligned}
     \mathbb{D}(\hat{\beta})^2 & \equiv \frac{RSS}{(n-2)S_{XX}}  \\
-    t_{\beta=0} &= \frac{\hat{\beta}-0}{\mathbb{D}(\hat{\beta})}  \\
+    t_{\beta=0} & \equiv \frac{\hat{\beta}-0}{\sigma(\hat{\beta})}    \\
+    &= \frac{\hat{\beta}}{\sqrt{\mathbb{D}(\hat{\beta})}}  \\
+    &= \frac{\hat{\beta} \sqrt{S_{XX}}}{\hat{\sigma}}   \\
     &= \sqrt{\frac{n-2}{n}} \sqrt{\frac{S_{XY}^2}{S_{XX}S_{XY}-S_{XY}^2}}
 \end{aligned}
 $$
