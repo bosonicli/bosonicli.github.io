@@ -8,6 +8,10 @@ tags:
 
 [toc]
 
+# Issues
+
++   Generalized Methods of Moments (GMM)
+
 # Simple Linear Regression (SLR)
 
 ## Random Measurement
