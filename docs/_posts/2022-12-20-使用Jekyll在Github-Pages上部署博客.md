@@ -114,4 +114,4 @@ layout: page-type
 
 [Librarius-MathJax]:https://lloyar.github.io/2018/10/08/mathjax-in-jekyll.html
 
-[2022-07-10-Hexo]:https://bosonicli.github.io/2022/07/10/使用Hexo在GitHub-Pages上部署博客.html
+[2022-07-10-Hexo](./2022-07-10-使用Hexo在GitHub-Pages上部署博客.md)

@@ -12,6 +12,12 @@ tags:
 
 +   Generalized Methods of Moments (GMM)
 
++   Generalized Least Square (GLS)
+
+    Weighted
+
+    Covariant
+
 # Simple Linear Regression (SLR)
 
 ## Random Measurement
@@ -19,15 +25,16 @@ tags:
 $$
 \begin{aligned}
     y &= f(x) + \epsilon    \\
-    \mathbb{E}( y \vert x ) &= f(x) \\
     &
     \begin{cases}
         \mathbb{E} (\epsilon) &= 0  \\
         \mathbb{E} (\epsilon_{i}\epsilon_{j}) &= \sigma^2 \delta_{ij}
     \end{cases} \\
-    \mathbb{D} (y_{i}) &= \sigma^2 \delta_{ij} \\
-    f(x) &= \beta_{0} + \beta_{1} x \\
-    y_{i} &= \beta_{0} + \beta_{1} x_{i} + \epsilon
+    &
+    \begin{cases}
+        \mathbb{E} ( y \vert x ) &= 0  \\
+        \mathbb{D} (y) &= \sigma^2 \delta_{ij}
+    \end{cases}
 \end{aligned}
 $$
 
@@ -52,20 +59,30 @@ $$
 \end{aligned}
 $$
 
-We also define some quantities for linear regression
+## Maximum Likelyhood Estimation (MLE)
+
+For Linear Regression case
+
+$$
+\begin{aligned}
+    f(x) &= \beta_{0} + \beta_{1} x \\
+    y_{i} &= \beta_{0} + \beta_{1} x_{i} + \epsilon
+\end{aligned}
+$$
+
+We define some statistics for following deduction
 
 $$
 \begin{aligned}
     \bar{x} & \equiv \frac{1}{n} \Sigma_{i} x_{i} \\
     \Delta x_{i} & \equiv x_{i} - \bar{x}   \\
     \Sigma_{i} \Delta x_{i} &= 0  \\
-    S_{AB} & \equiv \bar{\Delta_{a} \Delta_{b}} = \frac{1}{n} \Sigma_{i} \Delta a_{i} \Delta b_{i}    \\
+    S_{AB} & \equiv \bar{\Delta_{a} \Delta_{b}} \\
+    &= \frac{1}{n} \Sigma_{i} \Delta a_{i} \Delta b_{i}    \\
     S_{XX} &= n \bar{x^2} - n (\bar{x})^2 \\
     &= n \mathbb{D}(X)
 \end{aligned}
 $$
-
-## Maximum Likelyhood Estimation (MLE)
 
 In the following content, it is always assumed that \\(\epsilon \sim \mathcal{D}(0, \sigma^2)\\). We have the probability distribution function
 
@@ -194,7 +211,7 @@ Suppose we use \\(n \geq r\\) datapoints to do regression, then the estimated \\
 $$
 \begin{aligned}
     Y_{ n \times 1} &= X_{ n \times r } \beta_{ r \times 1 } + \epsilon_{ n \times 1 } \\
-    \mathbb{D} (\epsilon) & \equiv \mathbb{E}(\epsilon \epsilon^{T})   \\
+    \mathbb{D} (\epsilon) & \equiv \mathbb{E}(\epsilon \epsilon^{\dagger})   \\
     &= \sigma^{2} \mathbf{I}_{n}    \\
     Y_{ n \times 1 } &= \hat{Y}_{ n \times 1 } + e_{ n \times 1 }   \\
     \hat{Y}_{ n \times 1} &= X_{ n \times r } \hat{\beta}_{ r \times 1 }
@@ -203,44 +220,77 @@ $$
 
 In order to minimize Residual-Square-Sum (RSS) we want the residual \\(e\\) perpendicular with the hyperplane, so \\(\hat{Y}\\) is Projection of \\(Y\\) to the hyperplane expanded by \\(X\\)
 
-The Projection Matrix \\(\mathbf{H}\\) should be
+The Projection Matrix \\(\mathbf{P}\\) should be
 
 $$
 \begin{aligned}
-    \mathbf{H} & \equiv X (X^{T}X)^{-1} X^{T}    \\
-    \mathbf{H}^{T} &= \mathbf{H}  \\
-    \mathbf{H}^{2} &= \mathbf{H}  \\
-    Tr(\mathbf{H}) &= r \\
-    \hat{Y} &= X \hat{\beta} = \mathbf{H} Y    \\
-    \hat{\beta} &= (X^{T}X)^{-1} X^{T} Y
+    \mathbf{P} & \equiv X (X^{\dagger}X)^{-1} X^{\dagger}    \\
+    \mathbf{P}^{\dagger} &= \mathbf{P}  \\
+    \mathbf{P}^{2} &= \mathbf{P}  \\
+    \mathbf{P} X &= X   \\
+    Tr(\mathbf{P}) &= r \\
+    \hat{Y} &= X \hat{\beta} = \mathbf{P} Y    \\
+    \hat{\beta} &= (X^{\dagger}X)^{-1} X^{\dagger} Y    \\
+    e &= Y - \hat{Y}    \\
+    &= Y - X \hat{\beta}    \\
+    &= (\mathbf{I}_{n}-\mathbf{P}) Y    \\
+    X^{\dagger} e &= 0
 \end{aligned}
 $$
+
+Where the Ordinary Least Square (OLS) condition \\(X^{\dagger} e = 0\\) includes variant terms \\(\Sigma_{i} e_{i} x_{i} = 0\\) and also the constant term \\(\Sigma_{i} e_{i} = 0\\)
+
+Define Average Matrix \\(\mathbf{E}\\) as
+
+$$
+\begin{aligned}
+    \mathbf{E} & \equiv \frac{1}{n} 11_{n}
+\end{aligned}
+$$
+
+Note that \\(\mathbf{I}_{n}, \mathbf{P}, \mathbf{E}\\) are all Projection Matrix with different rank ( \\(n, r, 1\\) )
 
 ## Statistical Inference
 
 $$
 \begin{aligned}
-    e & \equiv Y - \hat{Y}   \\
-    &= Y - X \hat{\beta}    \\
-    &= (\mathbf{I}_{n}-\mathbf{H}) Y    \\
-    \mathbb{e} & \equiv cov(e,e)    \\
-    &= (\mathbf{I}_{n}-\mathbf{H}) cov(y,y) (\mathbf{I}_{n}-\mathbf{H}) \\
-    &= \sigma^2 (\mathbf{I}_{n}-\mathbf{H}) \\
-    RSS & \equiv e^{T} e    \\
-    &= Y^{T} (\mathbf{I}_{n}-\mathbf{H}) Y    \\
-    &= \epsilon^{T} (\mathbf{I}_{n} - \mathbf{H}) \epsilon  \\
-    \mathbb{E} (RSS) &= \sigma^2 Tr(\mathbf{I}_{n}-\mathbf{H})   \\
+    &= (\mathbf{I}_{n}-\mathbf{P}) Y    \\
+    \mathbb{D}(e) & \equiv cov(e,e)    \\
+    &= (\mathbf{I}_{n}-\mathbf{P}) cov(y,y) (\mathbf{I}_{n}-\mathbf{P}) \\
+    &= \sigma^2 (\mathbf{I}_{n}-\mathbf{P}) \\
+    RSS & \equiv e^{\dagger} e    \\
+    &= Y^{\dagger} (\mathbf{I}_{n}-\mathbf{P}) Y    \\
+    &= \epsilon^{\dagger} (\mathbf{I}_{n} - \mathbf{P}) \epsilon  \\
+    \mathbb{E} (RSS) &= \sigma^2 Tr(\mathbf{I}_{n}-\mathbf{P})   \\
     &= \sigma^2 (n-r)   \\
     &= \sigma^2 (n-p-1) \\
-    \hat{\sigma^2} &= \frac{RSS}{n-p-1} \\
-    TSS & \equiv Y^{T}(\mathbf{I}_{n} - \frac{1}{n} \mathbb{11}_{n}) Y  \\
-    R^{2} & \equiv 1-\frac{RSS}{TSS}    \\
-    \hat{\beta} &= (X^{T}X)^{-1} X^{T} ( X \beta + \epsilon )  \\
-    &= \beta + (X^{T}X)^{-1} X^{T} \epsilon    \\
+    \hat{\sigma^2} &= \frac{RSS}{n-p-1}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+    TS &= (\mathbf{I}_{n} - \mathbf{E}) Y   \\
+    ES &= (\mathbf{P} - \mathbf{E}) Y   \\
+    RS^{\dagger} ES &= Y^{\dagger} (\mathbf{I}_{n} - \mathbf{P}) (\mathbf{P} - \mathbf{E}) Y    \\
+    &= Y^{\dagger} (\mathbf{E} - \mathbf{P}\mathbf{E}) Y    \\
+    &= 0    \\
+    TSS &= TS^{\dagger} TS  \\
+    &= ES^{\dagger} ES + RS^{\dagger} RS    \\
+    &= ESS + RSS    \\
+    TSS & \equiv Y^{\dagger}(\mathbf{I}_{n} - \mathbf{E}) Y  \\
+    R^{2} & \equiv 1-\frac{RSS}{TSS}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+    \hat{\beta} &= (X^{\dagger}X)^{-1} X^{\dagger} ( X \beta + \epsilon )  \\
+    &= \beta + (X^{\dagger}X)^{-1} X^{\dagger} \epsilon    \\
     \mathbb{D} (\hat{\beta}) & \equiv cov(\hat{\beta}, \hat{\beta}) \\
-    &= \mathbb{E} ((\hat{\beta}-\beta)(\hat{\beta}-\beta)^{T})   \\
-    &= ((X^{T}X)^{-1} X^{T}) \sigma^{2} \mathbf{I}_{n} ((X^{T}X)^{-1} X^{T})^T  \\
-    &= \sigma^{2} (X^{T}X)^{-1}
+    &= \mathbb{E} ((\hat{\beta}-\beta)(\hat{\beta}-\beta)^{\dagger})   \\
+    &= ((X^{\dagger}X)^{-1} X^{\dagger}) \sigma^{2} \mathbf{I}_{n} ((X^{\dagger}X)^{-1} X^{\dagger})^T  \\
+    &= \sigma^{2} (X^{\dagger}X)^{-1}
 \end{aligned}
 $$
 
@@ -248,6 +298,6 @@ t-Test
 
 $$
 \begin{aligned}
-    t_{j} &= \frac{\hat{\beta}_{j}}{\sqrt{(X^{T}X)^{-1}_{jj}}} \frac{1}{\sqrt{\frac{RSS}{n-p-1}}}
+    t_{j} &= \frac{\hat{\beta}_{j}}{\sqrt{(X^{\dagger}X)^{-1}_{jj}}} \frac{1}{\sqrt{\frac{RSS}{n-p-1}}}
 \end{aligned}
 $$
