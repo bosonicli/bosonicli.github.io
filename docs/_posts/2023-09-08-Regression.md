@@ -169,23 +169,50 @@ $$
 
 Regression Equation and MLE
 
+Suppose we are dealing with 1 random measurement
+
 $$
 \begin{aligned}
-    Y &= X \beta + \epsilon \\
-    \mathbb{D} (\epsilon) & \equiv \mathbb{E}(\epsilon \epsilon^{T})   \\
-    &= \sigma^{2} \mathbf{I}_{n}    \\
-    \hat{\beta} &= (X^{T}X)^{-1} X^{T} Y
+    Y &= X_{ 1 \times r } \beta_{ r \times 1 } + \epsilon
+\end{aligned}
+$$
+ 
+linearly correlated to \\(r=p+1\\) quantities \\(X\\) including \\(p\\) variants \\(x_{\alpha}\\) and 1 constant.
+
+By Linear Regression we mean estimating
+
+$$
+\begin{aligned}
+    \hat{Y} &= X \hat{\beta}(y_{i}, x_{i})
 \end{aligned}
 $$
 
-Define leverage \\(\mathbf{H}\\)
+with estimated coefficient \\(\hat{\beta}\\), aka expressing the estimated \\(\hat{Y}\\) with linear transformation of \\(X\\)
+
+Suppose we use \\(n \geq r\\) datapoints to do regression, then the estimated \\(\hat{Y}\\) lies within a \\(r\\)-dim subspace(hyperplane) expanded by \\(X_{ n \times r}\\) and the residual \\(e\\) is out of the hyperplane
+
+$$
+\begin{aligned}
+    Y_{ n \times 1} &= X_{ n \times r } \beta_{ r \times 1 } + \epsilon_{ n \times 1 } \\
+    \mathbb{D} (\epsilon) & \equiv \mathbb{E}(\epsilon \epsilon^{T})   \\
+    &= \sigma^{2} \mathbf{I}_{n}    \\
+    Y_{ n \times 1 } &= \hat{Y}_{ n \times 1 } + e_{ n \times 1 }   \\
+    \hat{Y}_{ n \times 1} &= X_{ n \times r } \hat{\beta}_{ r \times 1 }
+\end{aligned}
+$$
+
+In order to minimize Residual-Square-Sum (RSS) we want the residual \\(e\\) perpendicular with the hyperplane, so \\(\hat{Y}\\) is Projection of \\(Y\\) to the hyperplane expanded by \\(X\\)
+
+The Projection Matrix \\(\mathbf{H}\\) should be
 
 $$
 \begin{aligned}
     \mathbf{H} & \equiv X (X^{T}X)^{-1} X^{T}    \\
     \mathbf{H}^{T} &= \mathbf{H}  \\
     \mathbf{H}^{2} &= \mathbf{H}  \\
-    \hat{Y} &= X \hat{\beta} = \mathbf{H} Y
+    Tr(\mathbf{H}) &= r \\
+    \hat{Y} &= X \hat{\beta} = \mathbf{H} Y    \\
+    \hat{\beta} &= (X^{T}X)^{-1} X^{T} Y
 \end{aligned}
 $$
 
@@ -203,8 +230,9 @@ $$
     &= Y^{T} (\mathbf{I}_{n}-\mathbf{H}) Y    \\
     &= \epsilon^{T} (\mathbf{I}_{n} - \mathbf{H}) \epsilon  \\
     \mathbb{E} (RSS) &= \sigma^2 Tr(\mathbf{I}_{n}-\mathbf{H})   \\
-    &= \sigma^2 (n-k-1) \\
-    \hat{\sigma^2} &= \frac{RSS}{n-k-1} \\
+    &= \sigma^2 (n-r)   \\
+    &= \sigma^2 (n-p-1) \\
+    \hat{\sigma^2} &= \frac{RSS}{n-p-1} \\
     TSS & \equiv Y^{T}(\mathbf{I}_{n} - \frac{1}{n} \mathbb{11}_{n}) Y  \\
     R^{2} & \equiv 1-\frac{RSS}{TSS}    \\
     \hat{\beta} &= (X^{T}X)^{-1} X^{T} ( X \beta + \epsilon )  \\
@@ -220,6 +248,6 @@ t-Test
 
 $$
 \begin{aligned}
-    t_{j} &= \frac{\hat{\beta}_{j}}{\sqrt{(X^{T}X)^{-1}_{jj}}} \frac{1}{\sqrt{\frac{RSS}{n-k-1}}}
+    t_{j} &= \frac{\hat{\beta}_{j}}{\sqrt{(X^{T}X)^{-1}_{jj}}} \frac{1}{\sqrt{\frac{RSS}{n-p-1}}}
 \end{aligned}
 $$
